@@ -1,0 +1,6 @@
+# Зависимости утилиты generate-placeholders.js
+node_modules/
+package-lock.json
+package.json
+generate-placeholders.js
+old-images/

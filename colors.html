@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Палитры — подбор для сайта</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:"Mulish","Segoe UI",system-ui,sans-serif;
+    background:#f5f1ed;
+    color:#2C2823;
+    padding:48px 32px;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1{
+    font-family:"Cormorant Garamond",Georgia,serif;
+    font-size:44px;font-weight:500;text-align:center;margin-bottom:10px;color:#2C2823;
+  }
+  .subtitle{text-align:center;font-size:14px;color:#756B5E;margin-bottom:48px;line-height:1.6;}
+  .palette-section{margin-bottom:64px;}
+  .palette-section h2{
+    font-family:"Cormorant Garamond",Georgia,serif;
+    font-size:28px;font-weight:500;text-align:center;margin-bottom:8px;color:#2C2823;
+  }
+  .palette-label{
+    display:block;text-align:center;font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+    color:#B19A7F;font-weight:600;margin-bottom:28px;
+  }
+  .swatches{
+    display:flex;flex-wrap:wrap;gap:16px;justify-content:center;max-width:1100px;margin:0 auto 18px;
+  }
+  .swatch{
+    width:130px;border-radius:8px;overflow:hidden;box-shadow:0 2px 10px rgba(44,40,35,.1);
+    transition:transform .25s,box-shadow .25s;
+  }
+  .swatch:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(44,40,35,.18);}
+  .swatch .color{height:90px;display:flex;align-items:flex-end;justify-content:center;padding:10px;}
+  .swatch .color span{
+    background:rgba(255,255,255,.82);font-size:11px;font-weight:600;letter-spacing:.06em;
+    padding:3px 10px;border-radius:20px;color:#2C2823;
+  }
+  .swatch .name{padding:12px 10px;background:#fff;text-align:center;}
+  .swatch .name .role{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#B19A7F;font-weight:600;}
+  .swatch .name .hex{font-size:13px;color:#756B5E;margin-top:3px;font-weight:500;}
+
+  /* current palette highlight */
+  .current-badge{
+    display:inline-block;background:#9B8268;color:#fff;font-size:10px;letter-spacing:.1em;
+    text-transform:uppercase;padding:4px 14px;border-radius:20px;font-weight:600;margin-left:10px;vertical-align:middle;
+  }
+
+  hr{max-width:400px;margin:48px auto;border:none;border-top:1px solid #E2DACE;}
+
+  .note{text-align:center;font-size:12px;color:#B19A7F;margin-top:32px;line-height:1.7;}
+</style>
+</head>
+<body>
+
+<h1>Пастельные палитры</h1>
+<p class="subtitle">
+  Альтернативы для сайта психолога-психотерапевта.<br/>
+  Текущая палитра отмечена значком «текущая».<br/>
+  Нажмите на понравившуюся — заказчик выберет позже.
+</p>
+
+<!-- ========== 1. Текущая (оригинал) ========== -->
+<div class="palette-section">
+  <h2>01 — Тёплый крем <span class="current-badge">текущая</span></h2>
+  <span class="palette-label">Оригинальная палитра сайта</span>
+  <div class="swatches">
+    <div class="swatch"><div class="color" style="background:#EAE0D8;"><span>фон</span></div><div class="name"><div class="role">--cream</div><div class="hex">#EAE0D8</div></div></div>
+    <div class="swatch"><div class="color" style="background:#EFE7E0;"><span>светлый фон</span></div><div class="name"><div class="role">--cream-soft</div><div class="hex">#EFE7E0</div></div></div>
+    <div class="swatch"><div class="color" style="background:#E3D8CD;"><span>секция</span></div><div class="name"><div class="role">--section</div><div class="hex">#E3D8CD</div></div></div>
+    <div class="swatch"><div class="color" style="background:#9B8268;"><span>акцент</span></div><div class="name"><div class="role">--brown</div><div class="hex">#9B8268</div></div></div>
+    <div class="swatch"><div class="color" style="background:#897155;"><span>акцент hover</span></div><div class="name"><div class="role">--brown-dark</div><div class="hex">#897155</div></div></div>
+    <div class="swatch"><div class="color" style="background:#C5B6A3;"><span>нумерация</span></div><div class="name"><div class="role">--taupe</div><div class="hex">#C5B6A3</div></div></div>
+    <div class="swatch"><div class="color" style="background:#2C2823;"><span>заголовки</span></div><div class="name"><div class="role">--ink</div><div class="hex">#2C2823</div></div></div>
+    <div class="swatch"><div class="color" style="background:#756B5E;"><span>текст</span></div><div class="name"><div class="role">--body</div><div class="hex">#756B5E</div></div></div>
+    <div class="swatch"><div class="color" style="background:#B19A7F;"><span>надписи</span></div><div class="name"><div class="role">--eyebrow</div><div class="hex">#B19A7F</div></div></div>
+    <div class="swatch"><div class="color" style="background:#E2DACE;"><span>линии</span></div><div class="name"><div class="role">--line</div><div class="hex">#E2DACE</div></div></div>
+  </div>
+</div>
+
+<hr/>
+
+<!-- ========== 2. Розовато-бежевая ========== -->
+<div class="palette-section">
+  <h2>02 — Розовый шёлк</h2>
+  <span class="palette-label">Мягче, с тёплым розовым подтоном</span>
+  <div class="swatches">
+    <div class="swatch"><div class="color" style="background:#F2E8E1;"><span>фон</span></div><div class="name"><div class="role">cream</div><div class="hex">#F2E8E1</div></div></div>
+    <div class="swatch"><div class="color" style="background:#F7EFEA;"><span>светлый фон</span></div><div class="name"><div class="role">cream-soft</div><div class="hex">#F7EFEA</div></div></div>
+    <div class="swatch"><div class="color" style="background:#EADDD3;"><span>секция</span></div><div class="name"><div class="role">section</div><div class="hex">#EADDD3</div></div></div>
+    <div class="swatch"><div class="color" style="background:#B88D7A;"><span>акцент</span></div><div class="name"><div class="role">accent</div><div class="hex">#B88D7A</div></div></div>
+    <div class="swatch"><div class="color" style="background:#A37967;"><span>акцент hover</span></div><div class="name"><div class="role">accent-dark</div><div class="hex">#A37967</div></div></div>
+    <div class="swatch"><div class="color" style="background:#D4C1B4;"><span>второстеп.</span></div><div class="name"><div class="role">taupe</div><div class="hex">#D4C1B4</div></div></div>
+    <div class="swatch"><div class="color" style="background:#2F2824;"><span>заголовки</span></div><div class="name"><div class="role">ink</div><div class="hex">#2F2824</div></div></div>
+    <div class="swatch"><div class="color" style="background:#7A6B60;"><span>текст</span></div><div class="name"><div class="role">body</div><div class="hex">#7A6B60</div></div></div>
+    <div class="swatch"><div class="color" style="background:#C4A590;"><span>надписи</span></div><div class="name"><div class="role">eyebrow</div><div class="hex">#C4A590</div></div></div>
+    <div class="swatch"><div class="color" style="background:#E8DED6;"><span>линии</span></div><div class="name"><div class="role">line</div><div class="hex">#E8DED6</div></div></div>
+  </div>
+</div>
+
+<!-- ========== 3. Серо-зелёная шалфей ========== -->
+<div class="palette-section">
+  <h2>03 — Шалфей и камень</h2>
+  <span class="palette-label">Спокойная, с зеленовато-серым оттенком</span>
+  <div class="swatches">
+    <div class="swatch"><div class="color" style="background:#E8E6DF;"><span>фон</span></div><div class="name"><div class="role">cream</div><div class="hex">#E8E6DF</div></div></div>
+    <div class="swatch"><div class="color" style="background:#F0EEE8;"><span>светлый фон</span></div><div class="name"><div class="role">cream-soft</div><div class="hex">#F0EEE8</div></div></div>
+    <div class="swatch"><div class="color" style="background:#DCD9CF;"><span>секция</span></div><div class="name"><div class="role">section</div><div class="hex">#DCD9CF</div></div></div>
+    <div class="swatch"><div class="color" style="background:#8A9B86;"><span>акцент</span></div><div class="name"><div class="role">accent</div><div class="hex">#8A9B86</div></div></div>
+    <div class="swatch"><div class="color" style="background:#768A72;"><span>акцент hover</span></div><div class="name"><div class="role">accent-dark</div><div class="hex">#768A72</div></div></div>
+    <div class="swatch"><div class="color" style="background:#BAB7A9;"><span>второстеп.</span></div><div class="name"><div class="role">taupe</div><div class="hex">#BAB7A9</div></div></div>
+    <div class="swatch"><div class="color" style="background:#2A2A25;"><span>заголовки</span></div><div class="name"><div class="role">ink</div><div class="hex">#2A2A25</div></div></div>
+    <div class="swatch"><div class="color" style="background:#6B6B60;"><span>текст</span></div><div class="name"><div class="role">body</div><div class="hex">#6B6B60</div></div></div>
+    <div class="swatch"><div class="color" style="background:#A3A892;"><span>надписи</span></div><div class="name"><div class="role">eyebrow</div><div class="hex">#A3A892</div></div></div>
+    <div class="swatch"><div class="color" style="background:#DEDBD3;"><span>линии</span></div><div class="name"><div class="role">line</div><div class="hex">#DEDBD3</div></div></div>
+  </div>
+</div>
+
+<!-- ========== 4. Лавандово-серая ========== -->
+<div class="palette-section">
+  <h2>04 — Лавандовый туман</h2>
+  <span class="palette-label">Холоднее, с нежным фиолетово-серым отливом</span>
+  <div class="swatches">
+    <div class="swatch"><div class="color" style="background:#EBE6EF;"><span>фон</span></div><div class="name"><div class="role">cream</div><div class="hex">#EBE6EF</div></div></div>
+    <div class="swatch"><div class="color" style="background:#F3EFF5;"><span>светлый фон</span></div><div class="name"><div class="role">cream-soft</div><div class="hex">#F3EFF5</div></div></div>
+    <div class="swatch"><div class="color" style="background:#E0D9E6;"><span>секция</span></div><div class="name"><div class="role">section</div><div class="hex">#E0D9E6</div></div></div>
+    <div class="swatch"><div class="color" style="background:#9A8DA6;"><span>акцент</span></div><div class="name"><div class="role">accent</div><div class="hex">#9A8DA6</div></div></div>
+    <div class="swatch"><div class="color" style="background:#877A93;"><span>акцент hover</span></div><div class="name"><div class="role">accent-dark</div><div class="hex">#877A93</div></div></div>
+    <div class="swatch"><div class="color" style="background:#C5BACD;"><span>второстеп.</span></div><div class="name"><div class="role">taupe</div><div class="hex">#C5BACD</div></div></div>
+    <div class="swatch"><div class="color" style="background:#29252E;"><span>заголовки</span></div><div class="name"><div class="role">ink</div><div class="hex">#29252E</div></div></div>
+    <div class="swatch"><div class="color" style="background:#6E6775;"><span>текст</span></div><div class="name"><div class="role">body</div><div class="hex">#6E6775</div></div></div>
+    <div class="swatch"><div class="color" style="background:#B1A2BA;"><span>надписи</span></div><div class="name"><div class="role">eyebrow</div><div class="hex">#B1A2BA</div></div></div>
+    <div class="swatch"><div class="color" style="background:#E2DDE8;"><span>линии</span></div><div class="name"><div class="role">line</div><div class="hex">#E2DDE8</div></div></div>
+  </div>
+</div>
+
+<!-- ========== 5. Песочная тёплая ========== -->
+<div class="palette-section">
+  <h2>05 — Солнечный песок</h2>
+  <span class="palette-label">Теплее, с золотисто-песочным настроением</span>
+  <div class="swatches">
+    <div class="swatch"><div class="color" style="background:#F1E7D6;"><span>фон</span></div><div class="name"><div class="role">cream</div><div class="hex">#F1E7D6</div></div></div>
+    <div class="swatch"><div class="color" style="background:#F8F0E2;"><span>светлый фон</span></div><div class="name"><div class="role">cream-soft</div><div class="hex">#F8F0E2</div></div></div>
+    <div class="swatch"><div class="color" style="background:#E8DCC5;"><span>секция</span></div><div class="name"><div class="role">section</div><div class="hex">#E8DCC5</div></div></div>
+    <div class="swatch"><div class="color" style="background:#B5966A;"><span>акцент</span></div><div class="name"><div class="role">accent</div><div class="hex">#B5966A</div></div></div>
+    <div class="swatch"><div class="color" style="background:#A28358;"><span>акцент hover</span></div><div class="name"><div class="role">accent-dark</div><div class="hex">#A28358</div></div></div>
+    <div class="swatch"><div class="color" style="background:#D3C2A8;"><span>второстеп.</span></div><div class="name"><div class="role">taupe</div><div class="hex">#D3C2A8</div></div></div>
+    <div class="swatch"><div class="color" style="background:#2E261C;"><span>заголовки</span></div><div class="name"><div class="role">ink</div><div class="hex">#2E261C</div></div></div>
+    <div class="swatch"><div class="color" style="background:#7A6B52;"><span>текст</span></div><div class="name"><div class="role">body</div><div class="hex">#7A6B52</div></div></div>
+    <div class="swatch"><div class="color" style="background:#C4A882;"><span>надписи</span></div><div class="name"><div class="role">eyebrow</div><div class="hex">#C4A882</div></div></div>
+    <div class="swatch"><div class="color" style="background:#E8DFCE;"><span>линии</span></div><div class="name"><div class="role">line</div><div class="hex">#E8DFCE</div></div></div>
+  </div>
+</div>
+
+<!-- ========== 6. Холодный серо-бежевый ========== -->
+<div class="palette-section">
+  <h2>06 — Серый кашемир</h2>
+  <span class="palette-label">Сдержанная, элегантная, почти монохромная</span>
+  <div class="swatches">
+    <div class="swatch"><div class="color" style="background:#EAE6E1;"><span>фон</span></div><div class="name"><div class="role">cream</div><div class="hex">#EAE6E1</div></div></div>
+    <div class="swatch"><div class="color" style="background:#F2EFEA;"><span>светлый фон</span></div><div class="name"><div class="role">cream-soft</div><div class="hex">#F2EFEA</div></div></div>
+    <div class="swatch"><div class="color" style="background:#DED9D1;"><span>секция</span></div><div class="name"><div class="role">section</div><div class="hex">#DED9D1</div></div></div>
+    <div class="swatch"><div class="color" style="background:#9F8F80;"><span>акцент</span></div><div class="name"><div class="role">accent</div><div class="hex">#9F8F80</div></div></div>
+    <div class="swatch"><div class="color" style="background:#8C7B6D;"><span>акцент hover</span></div><div class="name"><div class="role">accent-dark</div><div class="hex">#8C7B6D</div></div></div>
+    <div class="swatch"><div class="color" style="background:#C8C0B6;"><span>второстеп.</span></div><div class="name"><div class="role">taupe</div><div class="hex">#C8C0B6</div></div></div>
+    <div class="swatch"><div class="color" style="background:#2D2925;"><span>заголовки</span></div><div class="name"><div class="role">ink</div><div class="hex">#2D2925</div></div></div>
+    <div class="swatch"><div class="color" style="background:#756D65;"><span>текст</span></div><div class="name"><div class="role">body</div><div class="hex">#756D65</div></div></div>
+    <div class="swatch"><div class="color" style="background:#B5A89A;"><span>надписи</span></div><div class="name"><div class="role">eyebrow</div><div class="hex">#B5A89A</div></div></div>
+    <div class="swatch"><div class="color" style="background:#E2DDD7;"><span>линии</span></div><div class="name"><div class="role">line</div><div class="hex">#E2DDD7</div></div></div>
+  </div>
+</div>
+
+<!-- ========== 7. Оливково-травяная ========== -->
+<div class="palette-section">
+  <h2>07 — Оливковая ветвь</h2>
+  <span class="palette-label">Приглушённая зелень с тёплым подтоном</span>
+  <div class="swatches">
+    <div class="swatch"><div class="color" style="background:#EAE6D8;"><span>фон</span></div><div class="name"><div class="role">cream</div><div class="hex">#EAE6D8</div></div></div>
+    <div class="swatch"><div class="color" style="background:#F2EFE4;"><span>светлый фон</span></div><div class="name"><div class="role">cream-soft</div><div class="hex">#F2EFE4</div></div></div>
+    <div class="swatch"><div class="color" style="background:#DFDBC9;"><span>секция</span></div><div class="name"><div class="role">section</div><div class="hex">#DFDBC9</div></div></div>
+    <div class="swatch"><div class="color" style="background:#949A6E;"><span>акцент</span></div><div class="name"><div class="role">accent</div><div class="hex">#949A6E</div></div></div>
+    <div class="swatch"><div class="color" style="background:#80865C;"><span>акцент hover</span></div><div class="name"><div class="role">accent-dark</div><div class="hex">#80865C</div></div></div>
+    <div class="swatch"><div class="color" style="background:#C1BFA5;"><span>второстеп.</span></div><div class="name"><div class="role">taupe</div><div class="hex">#C1BFA5</div></div></div>
+    <div class="swatch"><div class="color" style="background:#2C2B20;"><span>заголовки</span></div><div class="name"><div class="role">ink</div><div class="hex">#2C2B20</div></div></div>
+    <div class="swatch"><div class="color" style="background:#6E6B57;"><span>текст</span></div><div class="name"><div class="role">body</div><div class="hex">#6E6B57</div></div></div>
+    <div class="swatch"><div class="color" style="background:#A8A788;"><span>надписи</span></div><div class="name"><div class="role">eyebrow</div><div class="hex">#A8A788</div></div></div>
+    <div class="swatch"><div class="color" style="background:#E3E0CF;"><span>линии</span></div><div class="name"><div class="role">line</div><div class="hex">#E3E0CF</div></div></div>
+  </div>
+</div>
+
+<!-- ========== 8. Сливочно-карамельная ========== -->
+<div class="palette-section">
+  <h2>08 — Карамельный бриз</h2>
+  <span class="palette-label">Глубокие карамельные ноты, оставаясь пастельной</span>
+  <div class="swatches">
+    <div class="swatch"><div class="color" style="background:#F0E3D0;"><span>фон</span></div><div class="name"><div class="role">cream</div><div class="hex">#F0E3D0</div></div></div>
+    <div class="swatch"><div class="color" style="background:#F7EDDE;"><span>светлый фон</span></div><div class="name"><div class="role">cream-soft</div><div class="hex">#F7EDDE</div></div></div>
+    <div class="swatch"><div class="color" style="background:#E6D6BE;"><span>секция</span></div><div class="name"><div class="role">section</div><div class="hex">#E6D6BE</div></div></div>
+    <div class="swatch"><div class="color" style="background:#B88250;"><span>акцент</span></div><div class="name"><div class="role">accent</div><div class="hex">#B88250</div></div></div>
+    <div class="swatch"><div class="color" style="background:#A47040;"><span>акцент hover</span></div><div class="name"><div class="role">accent-dark</div><div class="hex">#A47040</div></div></div>
+    <div class="swatch"><div class="color" style="background:#D9BE9E;"><span>второстеп.</span></div><div class="name"><div class="role">taupe</div><div class="hex">#D9BE9E</div></div></div>
+    <div class="swatch"><div class="color" style="background:#2F241A;"><span>заголовки</span></div><div class="name"><div class="role">ink</div><div class="hex">#2F241A</div></div></div>
+    <div class="swatch"><div class="color" style="background:#7D6450;"><span>текст</span></div><div class="name"><div class="role">body</div><div class="hex">#7D6450</div></div></div>
+    <div class="swatch"><div class="color" style="background:#CFA678;"><span>надписи</span></div><div class="name"><div class="role">eyebrow</div><div class="hex">#CFA678</div></div></div>
+    <div class="swatch"><div class="color" style="background:#EBDDCC;"><span>линии</span></div><div class="name"><div class="role">line</div><div class="hex">#EBDDCC</div></div></div>
+  </div>
+</div>
+
+<p class="note">
+  Все палитры сохраняют 10-ролевую структуру оригинала<br/>
+  и подходят для сайта психолога: спокойные, тёплые, пастельные.
+</p>
+
+</body>
+</html>

@@ -460,7 +460,7 @@
       <p>Знакомая тревога, которая не уходит. Одни и те же сценарии в отношениях. Внутренняя тяжесть, которой нет объяснения. С этим приходят ко мне — и шаг за шагом мы добираемся до того, что прячется за словами.</p>
       <div class="hero-actions">
         <a class="btn btn-solid" href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener">Сделать первый шаг</a>
-        <button class="btn btn-text" data-howitworks>
+        <button class="btn btn-text" onclick="openModal('Как это работает','К сути мы добираемся не долгими разговорами, а через образ — язык, на котором говорит подсознание. Первый шаг — бесплатный звонок, потом полноценная сессия, а затем двигаемся в комфортном вам темпе.')">
           <span class="play"><svg width="11" height="12" viewBox="0 0 11 12"><path d="M0 0L11 6L0 12V0Z" fill="#A88B75"/></svg></span>
           Как это работает
         </button>
@@ -705,16 +705,6 @@
   </div>
 </div>
 
-<!-- ============ VIDEO MODAL («Как это работает») ============ -->
-<div class="modal-back" id="videoModal">
-  <div class="modal modal-video">
-    <button class="close" id="videoClose" aria-label="Закрыть">&times;</button>
-    <div class="video-box">
-      <iframe id="videoFrame" data-src="https://www.youtube.com/embed/kIJ_d9F2vrA?autoplay=1&rel=0&playsinline=1" allow="autoplay; encrypted-media; fullscreen" allowfullscreen title="Как это работает"></iframe>
-    </div>
-  </div>
-</div>
-
 <!-- ============ SCRIPTS (clean, no external trackers) ============ -->
 <script>
   // ---- header scroll effect ----
@@ -741,23 +731,7 @@
   document.getElementById('modalClose').addEventListener('click', ()=>modal.classList.remove('open'));
   modal.addEventListener('click', e=>{ if(e.target===modal) modal.classList.remove('open'); });
 
-  // ---- video popup ----
-  const videoModal = document.getElementById('videoModal');
-  const videoFrame = document.getElementById('videoFrame');
-  function openVideo(){
-    videoFrame.src = videoFrame.dataset.src;
-    videoModal.classList.add('open'); drawer.classList.remove('open');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeVideo(){
-    videoModal.classList.remove('open');
-    videoFrame.src = '';
-    document.body.style.overflow = '';
-  }
-  document.querySelectorAll('[data-howitworks]').forEach(b=>b.addEventListener('click', openVideo));
-  document.getElementById('videoClose').addEventListener('click', closeVideo);
-  videoModal.addEventListener('click', e=>{ if(e.target===videoModal) closeVideo(); });
-  document.addEventListener('keydown', e=>{ if(e.key==='Escape'){ modal.classList.remove('open'); if(videoModal.classList.contains('open')) closeVideo(); } });
+  document.addEventListener('keydown', e=>{ if(e.key==='Escape'){ modal.classList.remove('open'); } });
 
   // ---- diplomas carousel: arrows + drag-to-scroll ----
   (function () {

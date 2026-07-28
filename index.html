@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" id="htmlRoot">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Анастасия Пайкина — психолог и психотерапевт. Онлайн-сессии на русском: тревожность, отношения, жизненные кризисы. Символдрама — глубинная работа через образы. Бесплатная первая встреча." />
+<meta name="description" id="metaDesc" content="Анастасия Пайкина — психолог и психотерапевт. Онлайн-сессии на русском: тревожность, отношения, жизненные кризисы. Символдрама — глубинная работа через образы. Бесплатная первая встреча." />
 <link rel="canonical" href="https://paykina-your-psy.com/" />
-<title>Анастасия Пайкина | Психолог-психотерапевт · Онлайн</title>
-<!-- Open Graph (превью при шаринге в мессенджерах / соцсетях) -->
+<title id="pageTitle">Анастасия Пайкина | Психолог-психотерапевт · Онлайн</title>
+<!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://paykina-your-psy.com/" />
-<meta property="og:title" content="Анастасия Пайкина | Психолог и психотерапевт онлайн" />
-<meta property="og:description" content="Онлайн-сессии на русском: тревожность, отношения, жизненные кризисы. Символдрама — глубинная работа через образы. Бесплатная первая встреча." />
+<meta property="og:title" id="ogTitle" content="Анастасия Пайкина | Психолог и психотерапевт онлайн" />
+<meta property="og:description" id="ogDesc" content="Онлайн-сессии на русском: тревожность, отношения, жизненные кризисы. Символдрама — глубинная работа через образы. Бесплатная первая встреча." />
 <meta property="og:image" content="https://paykina-your-psy.com/images/og-image.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="Анастасия Пайкина — психолог, психотерапевт" />
-<meta property="og:locale" content="ru_RU" />
+<meta property="og:image:alt" id="ogImgAlt" content="Анастасия Пайкина — психолог, психотерапевт" />
+<meta property="og:locale" id="ogLocale" content="ru_RU" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Анастасия Пайкина | Психолог и психотерапевт онлайн" />
-<meta name="twitter:description" content="Онлайн-сессии на русском: тревожность, отношения, жизненные кризисы. Символдрама — глубинная работа через образы." />
+<meta name="twitter:title" id="twTitle" content="Анастасия Пайкина | Психолог и психотерапевт онлайн" />
+<meta name="twitter:description" id="twDesc" content="Онлайн-сессии на русском: тревожность, отношения, жизненные кризисы. Символдрама — глубинная работа через образы." />
 <meta name="twitter:image" content="https://paykina-your-psy.com/images/og-image.jpg" />
-<!-- Structured data: Person + ProfessionalService (онлайн, без гео-привязки) -->
-<script type="application/ld+json">
+<!-- Structured data -->
+<script type="application/ld+json" id="ldJson">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -30,7 +30,7 @@
       "@id": "https://paykina-your-psy.com/#anastasia",
       "name": "Анастасия Пайкина",
       "jobTitle": "Психолог, психотерапевт",
-"description": "Психолог и психотерапевт. Онлайн-сессии методом символдрамы — глубинная работа через образы.",
+      "description": "Психолог и психотерапевт. Онлайн-сессии методом символдрамы — глубинная работа через образы.",
       "url": "https://paykina-your-psy.com/",
       "image": "https://paykina-your-psy.com/images/og-image.jpg",
       "knowsLanguage": ["ru"],
@@ -45,7 +45,7 @@
       "name": "Анастасия Пайкина — психолог и психотерапевт",
       "url": "https://paykina-your-psy.com/",
       "image": "https://paykina-your-psy.com/images/og-image.jpg",
-"description": "Онлайн-консультации психолога и психотерапевта: тревожность, отношения, жизненные кризисы. Метод символдрамы.",
+      "description": "Онлайн-консультации психолога и психотерапевта: тревожность, отношения, жизненные кризисы. Метод символдрамы.",
       "serviceType": "Психотерапия, психологическое консультирование (онлайн)",
       "provider": { "@id": "https://paykina-your-psy.com/#anastasia" },
       "availableLanguage": ["ru"],
@@ -62,14 +62,10 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<!-- preload LCP-картинки (первый экран) -->
 <link rel="preload" as="image" href="images/hero.webp" imagesrcset="images/hero-800.webp 800w, images/hero-1200.webp 1200w, images/hero.webp 1600w" imagesizes="(max-width: 980px) 100vw, 50vw" fetchpriority="high" />
-<!-- шрифты грузим асинхронно, чтобы не блокировать первую отрисовку (display=swap уже задан) -->
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Mulish:wght@300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Mulish:wght@300;400;500;600&display=swap" /></noscript>
 <style>
-  /* Metric-matched fallback fonts: занимают столько же места, что и веб-шрифты,
-     чтобы при их подгрузке не было сдвига текста (CLS). Метрики через @capsizecss. */
   @font-face{
     font-family:"Cormorant Fallback";
     src:local("Georgia"),local("Times New Roman"),local("Noto Serif"),local("Droid Serif");
@@ -116,6 +112,17 @@
   h1,h2,h3{font-family:var(--serif);color:var(--ink);font-weight:500;line-height:1.08;}
   h2.display{font-size:46px;font-weight:500;letter-spacing:.005em;}
   p{text-wrap:pretty;}
+
+  /* ---------- lang switcher ---------- */
+  .lang-switcher{display:flex;align-items:center;gap:0;border:1px solid var(--brown);border-radius:3px;overflow:hidden;flex-shrink:0;}
+  .lang-switcher button{
+    background:none;border:none;cursor:pointer;font-family:var(--sans);
+    font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;
+    color:var(--body);padding:6px 10px;transition:.25s;line-height:1.4;
+  }
+  .lang-switcher button.active{background:var(--brown);color:#fff;}
+  .lang-switcher button:hover:not(.active){color:var(--brown);}
+  .lang-divider{width:1px;height:18px;background:var(--brown);}
 
   /* ---------- buttons ---------- */
   .btn{
@@ -343,7 +350,6 @@
   .modal input{font-family:var(--sans);font-size:14px;padding:14px 16px;border:1px solid var(--line);background:#fff;color:var(--ink);}
   .modal input:focus{outline:none;border-color:var(--brown);}
   .modal .btn-solid{justify-content:center;margin-top:6px;}
-  /* video popup (YouTube Shorts - вертикальный) */
   .modal-video{background:#000;max-width:none;width:auto;padding:0;overflow:hidden;line-height:0;}
   .video-box{position:relative;aspect-ratio:9/16;height:min(86dvh,760px);max-width:92vw;background:#000;}
   .video-box iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
@@ -354,7 +360,7 @@
   /* ---------- responsive ---------- */
   @media(max-width:980px){
     .wrap{padding:0 28px;}
-    nav ul,.nav-cta .btn{display:none;}
+    nav ul,.nav-cta .btn,.nav-cta .lang-switcher{display:none;}
     .hamburger{display:flex;}
     :root{--sec:52px;}
     header{background:var(--cream);box-shadow:0 1px 0 var(--line);padding:13px 0;}
@@ -395,6 +401,7 @@
   .drawer a{font-family:var(--serif);font-size:30px;color:var(--ink);}
   .drawer .close{position:absolute;top:24px;right:28px;background:none;border:none;font-size:32px;cursor:pointer;color:var(--ink);}
   .drawer .btn-solid{margin-top:34px;width:auto;justify-content:center;font-family:var(--sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#fff;padding:13px 28px;}
+  .drawer .lang-switcher{margin-top:20px;}
 </style>
 </head>
 <body>
@@ -411,37 +418,47 @@
 <header id="header">
   <div class="wrap nav">
     <a href="#top" class="brand">
-      <span class="monogram">А&#8202;П</span>
+      <span class="monogram" data-i18n="brand.monogram">А&#8202;П</span>
       <span>
-        <div class="brand-name">АНАСТАСИЯ ПАЙКИНА</div>
-<div class="brand-sub">Психолог и психотерапевт</div>
+        <div class="brand-name" data-i18n="brand.name">АНАСТАСИЯ ПАЙКИНА</div>
+        <div class="brand-sub" data-i18n="brand.sub">Психолог и психотерапевт</div>
       </span>
     </a>
     <nav>
       <ul>
-        <li><a href="#about">Обо мне</a></li>
-        <li><a href="#method">Метод</a></li>
-        <li><a href="#services">Запросы</a></li>
-        <li><a href="#voices">Истории</a></li>
-        <li><a href="#faq">Вопросы</a></li>
+        <li><a href="#about" data-i18n="nav.about">Обо мне</a></li>
+        <li><a href="#method" data-i18n="nav.method">Метод</a></li>
+        <li><a href="#services" data-i18n="nav.services">Запросы</a></li>
+        <li><a href="#voices" data-i18n="nav.voices">Истории</a></li>
+        <li><a href="#faq" data-i18n="nav.faq">Вопросы</a></li>
       </ul>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-solid" href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener">НАПИСАТЬ</a>
-      <button class="hamburger" id="hamburger" aria-label="Меню"><span></span><span></span><span></span></button>
+      <div class="lang-switcher" id="langSwitcher">
+        <button data-lang="ru" class="active" aria-label="Русский">RU</button>
+        <div class="lang-divider"></div>
+        <button data-lang="uk" aria-label="Українська">UA</button>
+      </div>
+      <a class="btn btn-solid" href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener" data-i18n="cta.write">НАПИСАТЬ</a>
+      <button class="hamburger" id="hamburger" aria-label="Меню" data-i18n-aria="nav.menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
 
 <!-- mobile drawer -->
 <div class="drawer" id="drawer">
-  <button class="close" id="drawerClose" aria-label="Закрыть">&times;</button>
-  <a href="#about">Обо мне</a>
-  <a href="#method">Метод</a>
-  <a href="#services">Запросы</a>
-  <a href="#voices">Истории</a>
-  <a href="#faq">Вопросы</a>
-  <a class="btn btn-solid" href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener">НАПИСАТЬ</a>
+  <button class="close" id="drawerClose" aria-label="Закрыть" data-i18n-aria="modal.close">&times;</button>
+  <a href="#about" data-i18n="nav.about">Обо мне</a>
+  <a href="#method" data-i18n="nav.method">Метод</a>
+  <a href="#services" data-i18n="nav.services">Запросы</a>
+  <a href="#voices" data-i18n="nav.voices">Истории</a>
+  <a href="#faq" data-i18n="nav.faq">Вопросы</a>
+  <div class="lang-switcher" id="langSwitcherDrawer">
+    <button data-lang="ru" class="active" aria-label="Русский">RU</button>
+    <div class="lang-divider"></div>
+    <button data-lang="uk" aria-label="Українська">UA</button>
+  </div>
+  <a class="btn btn-solid" href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener" data-i18n="cta.write">НАПИСАТЬ</a>
 </div>
 
 <!-- ============ HERO ============ -->
@@ -455,14 +472,14 @@
   </svg>
   <div class="wrap hero-grid">
     <div class="hero-text">
-      <span class="eyebrow">Психотерапия онлайн — бережно и глубоко</span>
-      <h1>Нести всё на себе — <em>не единственный</em> путь</h1>
-      <p>Знакомая тревога, которая не уходит. Одни и те же сценарии в отношениях. Внутренняя тяжесть, которой нет объяснения. С этим приходят ко мне — и шаг за шагом мы добираемся до того, что прячется за словами.</p>
+      <span class="eyebrow" data-i18n="hero.eyebrow">Психотерапия онлайн — бережно и глубоко</span>
+      <h1 data-i18n-html="hero.h1">Нести всё на себе — <em>не единственный</em> путь</h1>
+      <p data-i18n="hero.p">Знакомая тревога, которая не уходит. Одни и те же сценарии в отношениях. Внутренняя тяжесть, которой нет объяснения. С этим приходят ко мне — и шаг за шагом мы добираемся до того, что прячется за словами.</p>
       <div class="hero-actions">
-        <a class="btn btn-solid" href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener">Сделать первый шаг</a>
-        <button class="btn btn-text" onclick="openModal('Как это работает','К сути мы добираемся не долгими разговорами, а через образ — язык, на котором говорит подсознание. Первый шаг — бесплатный звонок, потом полноценная сессия, а затем двигаемся в комфортном вам темпе.')">
+        <a class="btn btn-solid" href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener" data-i18n="hero.cta">Сделать первый шаг</a>
+        <button class="btn btn-text" data-i18n-onclick="hero.howItWorks" onclick="openModalI18n('hero.howItWorks')">
           <span class="play"><svg width="11" height="12" viewBox="0 0 11 12"><path d="M0 0L11 6L0 12V0Z" fill="#A88B75"/></svg></span>
-          Как это работает
+          <span data-i18n="hero.howItWorks.btn">Как это работает</span>
         </button>
       </div>
     </div>
@@ -470,40 +487,40 @@
   <div class="hero-photo">
     <picture>
       <source type="image/webp" srcset="images/hero-800.webp 800w, images/hero-1200.webp 1200w, images/hero.webp 1600w" sizes="(max-width: 980px) 100vw, 50vw" />
-      <img src="images/hero.png?v=2" alt="Анастасия Пайкина, психолог и психотерапевт" width="1600" height="878" fetchpriority="high" decoding="async" />
+      <img src="images/hero.png?v=2" alt="Анастасия Пайкина, психолог и психотерапевт" data-i18n-alt="hero.imgAlt" width="1600" height="878" fetchpriority="high" decoding="async" />
     </picture>
   </div>
 </section>
 
-<!-- ============ SERVICES / ЗАПРОСЫ ============ -->
+<!-- ============ SERVICES ============ -->
 <section class="services" id="services" data-screen-label="Запросы">
   <div class="wrap">
-      <span class="eyebrow reveal">Темы, с которыми приходят</span>
-      <h2 class="reveal">С чем я помогаю</h2>
+      <span class="eyebrow reveal" data-i18n="services.eyebrow">Темы, с которыми приходят</span>
+      <h2 class="reveal" data-i18n="services.h2">С чем я помогаю</h2>
       <div class="svc-grid">
         <div class="svc reveal">
           <div class="icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="22" r="15"/><path d="M24 12 A10 10 0 1 1 16.5 29 A7.5 7.5 0 1 1 28 23 A4.5 4.5 0 1 1 21.5 22.5"/></svg>
           </div>
-          <h3>Когда трудно внутри</h3>
-          <p>Постоянное напряжение и тревожный фон, который не отпускает. Ощущение, что вы себе не хозяин — и тяжёлый след прошлого, который никак не стирается.</p>
-          <a class="learn" href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener">Понять себя <svg width="22" height="8" viewBox="0 0 22 8" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 4h20M16 1l4 3-4 3"/></svg></a>
+          <h3 data-i18n="services.card1.h3">Когда трудно внутри</h3>
+          <p data-i18n="services.card1.p">Постоянное напряжение и тревожный фон, который не отпускает. Ощущение, что вы себе не хозяин — и тяжёлый след прошлого, который никак не стирается.</p>
+          <a class="learn" href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener"><span data-i18n="services.card1.link">Понять себя</span> <svg width="22" height="8" viewBox="0 0 22 8" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 4h20M16 1l4 3-4 3"/></svg></a>
         </div>
         <div class="svc reveal">
           <div class="icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="17" r="6"/><circle cx="31" cy="20" r="5"/><path d="M7 39c0-7 5-11 11-11 3.5 0 6.5 1.3 8.5 3.7"/><path d="M24 30c1.8-1.3 4.3-2 7-2 6 0 10 4 10 11"/></svg>
           </div>
-          <h3>Когда трудно с другими</h3>
-          <p>Ссоры, которые повторяются по кругу. Дистанция, растущая в паре. Сложные чувства к родителям, которые не получается ни высказать, ни отпустить.</p>
-          <a class="learn" href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener">Вернуть близость <svg width="22" height="8" viewBox="0 0 22 8" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 4h20M16 1l4 3-4 3"/></svg></a>
+          <h3 data-i18n="services.card2.h3">Когда трудно с другими</h3>
+          <p data-i18n="services.card2.p">Ссоры, которые повторяются по кругу. Дистанция, растущая в паре. Сложные чувства к родителям, которые не получается ни высказать, ни отпустить.</p>
+          <a class="learn" href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener"><span data-i18n="services.card2.link">Вернуть близость</span> <svg width="22" height="8" viewBox="0 0 22 8" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 4h20M16 1l4 3-4 3"/></svg></a>
         </div>
         <div class="svc reveal">
           <div class="icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><path d="M30.5 17.5l-4 9-9 4 4-9z"/><circle cx="24" cy="24" r="1.4" fill="currentColor" stroke="none"/></svg>
           </div>
-          <h3>Когда привычный мир рушится</h3>
-          <p>Развод, переезд, потеря — момент, в котором старые опоры исчезли, а новые ещё не появились. Состояние, когда непонятно, на что опереться и куда идти дальше.</p>
-          <a class="learn" href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener">Найти почву <svg width="22" height="8" viewBox="0 0 22 8" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 4h20M16 1l4 3-4 3"/></svg></a>
+          <h3 data-i18n="services.card3.h3">Когда привычный мир рушится</h3>
+          <p data-i18n="services.card3.p">Развод, переезд, потеря — момент, в котором старые опоры исчезли, а новые ещё не появились. Состояние, когда непонятно, на что опереться и куда идти дальше.</p>
+          <a class="learn" href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener"><span data-i18n="services.card3.link">Найти почву</span> <svg width="22" height="8" viewBox="0 0 22 8" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 4h20M16 1l4 3-4 3"/></svg></a>
         </div>
       </div>
   </div>
@@ -514,135 +531,135 @@
   <div class="quote-bg"></div>
   <div class="quote-inner reveal">
     <div class="quote-mark">&ldquo;</div>
-    <blockquote>Самое сложное — позволить себе начать.</blockquote>
-    <div class="cite">Анастасия Пайкина</div>
+    <blockquote data-i18n="quote.text">Самое сложное — позволить себе начать.</blockquote>
+    <div class="cite" data-i18n="quote.cite">Анастасия Пайкина</div>
   </div>
 </section>
 
-<!-- ============ METHOD / КАК Я РАБОТАЮ ============ -->
+<!-- ============ METHOD ============ -->
 <section class="method" id="method" data-screen-label="Метод">
   <div class="wrap">
     <div class="method-inner reveal">
-      <span class="eyebrow">Метод</span>
-      <h2>Мой подход</h2>
+      <span class="eyebrow" data-i18n="method.eyebrow">Метод</span>
+      <h2 data-i18n="method.h2">Мой подход</h2>
       <span class="mark">&ldquo;</span>
-      <p class="lead">Я работаю в подходе, где к сути идут не длинными разговорами, а бережнее и глубже — через воображение.</p>
-      <p>Образ — это язык, на котором говорит бессознательное. Через него мы касаемся того, что правит состоянием изнутри, но не укладывается в слова: давней тревоги, того, что держит годами.</p>
-      <p>То, что рассудком не объяснить, через образ вдруг проясняется. А когда что-то по-настоящему увидено — оно больше не властно над вами.</p>
+      <p class="lead" data-i18n="method.lead">Я работаю в подходе, где к сути идут не длинными разговорами, а бережнее и глубже — через воображение.</p>
+      <p data-i18n="method.p1">Образ — это язык, на котором говорит бессознательное. Через него мы касаемся того, что правит состоянием изнутри, но не укладывается в слова: давней тревоги, того, что держит годами.</p>
+      <p data-i18n="method.p2">То, что рассудком не объяснить, через образ вдруг проясняется. А когда что-то по-настоящему увидено — оно больше не властно над вами.</p>
     </div>
   </div>
 </section>
 
-<!-- ============ VOICES / ЦИТАТЫ ============ -->
+<!-- ============ VOICES ============ -->
 <section class="voices" id="voices" data-screen-label="Слова">
   <div class="wrap">
-    <span class="eyebrow reveal">Живой опыт</span>
-    <h2 class="reveal">От первого лица</h2>
-    <p class="voices-note reveal">Имена и детали изменены</p>
+    <span class="eyebrow reveal" data-i18n="voices.eyebrow">Живой опыт</span>
+    <h2 class="reveal" data-i18n="voices.h2">От первого лица</h2>
+    <p class="voices-note reveal" data-i18n="voices.note">Имена и детали изменены</p>
     <div class="voices-track" id="voicesTrack">
-      <div class="voice-card"><span class="vmark">&ldquo;</span><blockquote>Я искренне считала своей добродетелью то, что я удобная и никому не мешаю. А потом осознала: это не скромность, а ужас перед тем, что меня отодвинут, если я займу много места. С этим мы и стали работать — и я впервые разрешила себе быть заметной.</blockquote><div class="vname">Алина, 27</div></div>
-      <div class="voice-card"><span class="vmark">&ldquo;</span><blockquote>Долго жил с ощущением, что всё решают обстоятельства. Не повезло, так вышло, время виновато. А когда стал копаться, обнаружил: я сам принимал кучу решений. Только раньше не хотел брать это на себя.</blockquote><div class="vname">Сергей, 32</div></div>
-      <div class="voice-card"><span class="vmark">&ldquo;</span><blockquote>Никакой катастрофы у меня не случилось. Всё будто бы хорошо, а внутри — выжженное поле. Я долго сомневалась, идти ли с таким к специалисту — казалось, недостаточно серьёзно. А потом поняла: именно с этим и надо.</blockquote><div class="vname">Марина, 29</div></div>
-      <div class="voice-card"><span class="vmark">&ldquo;</span><blockquote>Не могу вспомнить, когда в последний раз по-настоящему выдыхала. Всё время в боевой готовности, словно сейчас что-то обрушится. На встречах я заново учусь не быть в постоянной обороне. И понимаю: безопасность — это не контроль, а внутреннее состояние.</blockquote><div class="vname">Дарья, 25</div></div>
-      <div class="voice-card"><span class="vmark">&ldquo;</span><blockquote>Думал, проблема в одиночестве. А проблема оказалась в том, что мне было невыносимо оставаться наедине с тишиной — потому что в ней проступало всё, от чего я много лет убегал.</blockquote><div class="vname">Андрей, 34</div></div>
-      <div class="voice-card"><span class="vmark">&ldquo;</span><blockquote>Была уверена: любовь надо заработать. Сначала стать достаточно хорошей — тогда, может, и мне достанется. Только в сорок семь я увидела, что заслуживать её было нужно не перед кем-то, а перед собой.</blockquote><div class="vname">Светлана, 47</div></div>
-      <div class="voice-card"><span class="vmark">&ldquo;</span><blockquote>Пришёл, если честно, с большим сомнением. Не верил, что беседы что-то меняют. А спустя пару месяцев заметил: на то, что раньше взрывало, реагирую ровнее. Одно это уже оправдало всё.</blockquote><div class="vname">Дмитрий, 38</div></div>
+      <div class="voice-card"><span class="vmark">&ldquo;</span><blockquote data-i18n="voices.v1">Я искренне считала своей добродетелью то, что я удобная и никому не мешаю. А потом осознала: это не скромность, а ужас перед тем, что меня отодвинут, если я займу много места. С этим мы и стали работать — и я впервые разрешила себе быть заметной.</blockquote><div class="vname">Алина, 27</div></div>
+      <div class="voice-card"><span class="vmark">&ldquo;</span><blockquote data-i18n="voices.v2">Долго жил с ощущением, что всё решают обстоятельства. Не повезло, так вышло, время виновато. А когда стал копаться, обнаружил: я сам принимал кучу решений. Только раньше не хотел брать это на себя.</blockquote><div class="vname">Сергей, 32</div></div>
+      <div class="voice-card"><span class="vmark">&ldquo;</span><blockquote data-i18n="voices.v3">Никакой катастрофы у меня не случилось. Всё будто бы хорошо, а внутри — выжженное поле. Я долго сомневалась, идти ли с таким к специалисту — казалось, недостаточно серьёзно. А потом поняла: именно с этим и надо.</blockquote><div class="vname">Марина, 29</div></div>
+      <div class="voice-card"><span class="vmark">&ldquo;</span><blockquote data-i18n="voices.v4">Не могу вспомнить, когда в последний раз по-настоящему выдыхала. Всё время в боевой готовности, словно сейчас что-то обрушится. На встречах я заново учусь не быть в постоянной обороне. И понимаю: безопасность — это не контроль, а внутреннее состояние.</blockquote><div class="vname">Дарья, 25</div></div>
+      <div class="voice-card"><span class="vmark">&ldquo;</span><blockquote data-i18n="voices.v5">Думал, проблема в одиночестве. А проблема оказалась в том, что мне было невыносимо оставаться наедине с тишиной — потому что в ней проступало всё, от чего я много лет убегал.</blockquote><div class="vname">Андрей, 34</div></div>
+      <div class="voice-card"><span class="vmark">&ldquo;</span><blockquote data-i18n="voices.v6">Была уверена: любовь надо заработать. Сначала стать достаточно хорошей — тогда, может, и мне достанется. Только в сорок семь я увидела, что заслуживать её было нужно не перед кем-то, а перед собой.</blockquote><div class="vname">Светлана, 47</div></div>
+      <div class="voice-card"><span class="vmark">&ldquo;</span><blockquote data-i18n="voices.v7">Пришёл, если честно, с большим сомнением. Не верил, что беседы что-то меняют. А спустя пару месяцев заметил: на то, что раньше взрывало, реагирую ровнее. Одно это уже оправдало всё.</blockquote><div class="vname">Дмитрий, 38</div></div>
     </div>
     <div class="voices-arrows reveal">
-      <button id="voicesPrev" aria-label="Назад"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
-      <button id="voicesNext" aria-label="Вперёд"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+      <button id="voicesPrev" aria-label="Назад" data-i18n-aria="arrows.prev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button id="voicesNext" aria-label="Вперёд" data-i18n-aria="arrows.next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
     </div>
     <div class="voices-cta reveal">
-      <a class="btn btn-solid" href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener">Начать свою историю</a>
+      <a class="btn btn-solid" href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener" data-i18n="voices.cta">Начать свою историю</a>
     </div>
   </div>
 </section>
 
-<!-- ============ ABOUT / ОБО МНЕ ============ -->
+<!-- ============ ABOUT ============ -->
 <section class="about" id="about" data-screen-label="Обо мне">
   <div class="about-photo reveal">
     <picture>
       <source srcset="images/about-me.webp" type="image/webp" />
-      <img src="images/about-me.png" alt="Психолог и психотерапевт" width="1023" height="1537" loading="lazy" decoding="async" />
+      <img src="images/about-me.png" alt="Психолог и психотерапевт" data-i18n-alt="about.imgAlt" width="1023" height="1537" loading="lazy" decoding="async" />
     </picture>
   </div>
   <div class="about-text reveal">
-    <span class="eyebrow">Обо мне</span>
-    <h2>Из тупика всегда есть путь —<br/>даже когда он не виден</h2>
-    <p>Я практикующий психолог и психотерапевт. В моём опыте — работа с женщинами после насилия, с людьми, оставшимися без дома, с детьми, которым война оставила слишком тяжёлый след. Сегодня я веду частную онлайн-практику.</p>
-    <p>Мы привыкли разбираться в себе через логику — но то, что нами движет, обитает на другой глубине. Можно сотни раз всё рационально объяснить и не продвинуться ни на шаг: корень не в том, что мы осознаём, а в том, что чувствуем, не замечая.</p>
-    <div class="signature">Анастасия Пайкина</div>
+    <span class="eyebrow" data-i18n="about.eyebrow">Обо мне</span>
+    <h2 data-i18n-html="about.h2">Из тупика всегда есть путь —<br/>даже когда он не виден</h2>
+    <p data-i18n="about.p1">Я практикующий психолог и психотерапевт. В моём опыте — работа с женщинами после насилия, с людьми, оставшимися без дома, с детьми, которым война оставила слишком тяжёлый след. Сегодня я веду частную онлайн-практику.</p>
+    <p data-i18n="about.p2">Мы привыкли разбираться в себе через логику — но то, что нами движет, обитает на другой глубине. Можно сотни раз всё рационально объяснить и не продвинуться ни на шаг: корень не в том, что мы осознаём, а в том, что чувствуем, не замечая.</p>
+    <div class="signature" data-i18n="about.signature">Анастасия Пайкина</div>
   </div>
 </section>
 
-<!-- ============ PROCESS / ПЕРВЫЕ ШАГИ ============ -->
+<!-- ============ PROCESS ============ -->
 <section class="process" data-screen-label="Процесс">
   <div class="wrap">
-    <span class="eyebrow reveal">С чего мы стартуем</span>
-    <h2 class="reveal">Путь к себе — первые четыре шага</h2>
+    <span class="eyebrow reveal" data-i18n="process.eyebrow">С чего мы стартуем</span>
+    <h2 class="reveal" data-i18n="process.h2">Путь к себе — первые четыре шага</h2>
     <div class="steps">
-      <div class="step reveal"><div class="num">01</div><h3>Знакомство без обязательств</h3><p>Бесплатный звонок: вы рассказываете, что привело. Я слушаю и отвечаю на любые вопросы.</p></div>
-      <div class="step reveal"><div class="num">02</div><h3>Погружение</h3><p>Первая полноценная сессия. Через образ мы идём к тому, что скрыто. Часто уже на этом этапе становится понятно, где настоящая боль.</p></div>
-      <div class="step reveal"><div class="num">03</div><h3>Наш совместный ритм</h3><p>Между встречами вы переносите пережитое на бумагу — рисунок вытаскивает то, что пока не получается выразить словами. Мы опираемся на это и движемся глубже.</p></div>
-      <div class="step reveal"><div class="num">04</div><h3>Сдвиг</h3><p>То, что держало годами, понемногу отпускает. Появляется внутренняя устойчивость. Возвращается ощущение, что жизнь — ваша.</p></div>
+      <div class="step reveal"><div class="num">01</div><h3 data-i18n="process.step1.h3">Знакомство без обязательств</h3><p data-i18n="process.step1.p">Бесплатный звонок: вы рассказываете, что привело. Я слушаю и отвечаю на любые вопросы.</p></div>
+      <div class="step reveal"><div class="num">02</div><h3 data-i18n="process.step2.h3">Погружение</h3><p data-i18n="process.step2.p">Первая полноценная сессия. Через образ мы идём к тому, что скрыто. Часто уже на этом этапе становится понятно, где настоящая боль.</p></div>
+      <div class="step reveal"><div class="num">03</div><h3 data-i18n="process.step3.h3">Наш совместный ритм</h3><p data-i18n="process.step3.p">Между встречами вы переносите пережитое на бумагу — рисунок вытаскивает то, что пока не получается выразить словами. Мы опираемся на это и движемся глубже.</p></div>
+      <div class="step reveal"><div class="num">04</div><h3 data-i18n="process.step4.h3">Сдвиг</h3><p data-i18n="process.step4.p">То, что держало годами, понемногу отпускает. Появляется внутренняя устойчивость. Возвращается ощущение, что жизнь — ваша.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ============ EDUCATION / ОБРАЗОВАНИЕ ============ -->
+<!-- ============ EDUCATION ============ -->
 <section class="education" id="education" data-screen-label="Образование">
   <div class="wrap">
-    <span class="eyebrow reveal">Образование и метод</span>
-    <h2 class="reveal">Дипломы и сертификаты</h2>
+    <span class="eyebrow reveal" data-i18n="education.eyebrow">Образование и метод</span>
+    <h2 class="reveal" data-i18n="education.h2">Дипломы и сертификаты</h2>
     <div class="diplomas-track reveal" id="diplomasTrack">
-      <div class="diploma-card"><img src="images/diplomas/1.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/2.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/3.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/4.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/5.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/6.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/7.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/8.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/9.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/10.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/11.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/12.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/13.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/14.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/15.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/16.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/17.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/18.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/19.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/20.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/21.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/22.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/23.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
-      <div class="diploma-card"><img src="images/diplomas/24.webp" alt="Диплом" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/1.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/2.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/3.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/4.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/5.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/6.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/7.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/8.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/9.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/10.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/11.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/12.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/13.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/14.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/15.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/16.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/17.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/18.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/19.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/20.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/21.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/22.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/23.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
+      <div class="diploma-card"><img src="images/diplomas/24.webp" alt="Диплом" data-i18n-alt="education.diploma" loading="lazy" decoding="async" /></div>
     </div>
     <div class="diplomas-arrows reveal">
-      <button id="diplomasPrev" aria-label="Назад"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
-      <button id="diplomasNext" aria-label="Вперёд"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+      <button id="diplomasPrev" aria-label="Назад" data-i18n-aria="arrows.prev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button id="diplomasNext" aria-label="Вперёд" data-i18n-aria="arrows.next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
     </div>
   </div>
 </section>
 
-<!-- ============ FAQ / ЧАСТЫЕ ВОПРОСЫ ============ -->
+<!-- ============ FAQ ============ -->
 <section class="faq" id="faq" data-screen-label="Вопросы">
   <div class="wrap">
     <span class="eyebrow reveal">FAQ</span>
-    <h2 class="reveal">Частые вопросы</h2>
+    <h2 class="reveal" data-i18n="faq.h2">Частые вопросы</h2>
     <div class="faq-list reveal">
-      <div class="faq-item open"><button class="faq-q">В чём отличие символдрамы от привычного разговора с психологом?<span class="faq-icon"></span></button><div class="faq-a"><p>Психика работает на двух уровнях. Первый — сознательный: здесь мы анализируем, проговариваем, выстраиваем причинно-следственные цепочки. Второй — бессознательный, и он оперирует не словами, а образами. Символдрама обращается именно туда: вы проживаете образ, а через него открывается то, до чего логикой не добраться.</p></div></div>
-      <div class="faq-item"><button class="faq-q">За этим стоит наука или что-то другое?<span class="faq-icon"></span></button><div class="faq-a"><p>Это клинический метод психотерапии с полувековой историей. Кататимно-имагинативную психотерапию создал немецкий психиатр Ханскарл Лёйнер в 1950-х, и с тех пор она применяется в клинической практике. Существуют стандарты обучения, профессиональная сертификация и научные публикации.</p></div></div>
-      <div class="faq-item"><button class="faq-q">Каким образом работа с образами решает жизненные трудности?<span class="faq-icon"></span></button><div class="faq-a"><p>Корень трудности редко лежит на поверхности, где его ищет рациональный ум. Можно десятки раз всё себе проговорить и остаться в той же точке — потому что состоянием управляет не осознанная мысль, а глубинные слои, куда слова не проникают. Образ даёт к ним короткий доступ.</p></div></div>
-      <div class="faq-item"><button class="faq-q">Сколько понадобится встреч, прежде чем я замечу перемены?<span class="faq-icon"></span></button><div class="faq-a"><p>Всё индивидуально. Точный ориентир я смогу дать только после того, как услышу вашу историю на ознакомительной беседе.</p></div></div>
-      <div class="faq-item"><button class="faq-q">Что будет на бесплатном звонке-знакомстве?<span class="faq-icon"></span></button><div class="faq-a"><p>Короткая встреча на 15–20 минут. Вы описываете, что вас беспокоит, я отвечаю на вопросы, и мы вместе определяем, какой формат работы вам подойдёт.</p></div></div>
-      <div class="faq-item"><button class="faq-q">Какая продолжительность одной сессии?<span class="faq-icon"></span></button><div class="faq-a"><p>Один час. Встречи проходят онлайн.</p></div></div>
-      <div class="faq-item"><button class="faq-q">С какой периодичностью лучше встречаться?<span class="faq-icon"></span></button><div class="faq-a"><p>Оптимально — раз в неделю.</p></div></div>
-      <div class="faq-item"><button class="faq-q">На каком языке идут сессии?<span class="faq-icon"></span></button><div class="faq-a"><p>На русском — как вам удобнее.</p></div></div>
-      <div class="faq-item"><button class="faq-q">Насколько это конфиденциально?<span class="faq-icon"></span></button><div class="faq-a"><p>Абсолютно. Всё, что звучит на наших встречах и в переписке, не выходит за пределы кабинета.</p></div></div>
-      <div class="faq-item"><button class="faq-q">Если я не могу точно сформулировать, что со мной, — можно всё равно обратиться?<span class="faq-icon"></span></button><div class="faq-a"><p>Разумеется. Не нужно заранее раскладывать всё по полочкам. Можно прийти как есть, а разбираться будем уже вместе.</p></div></div>
+      <div class="faq-item open"><button class="faq-q"><span data-i18n="faq.q1">В чём отличие символдрамы от привычного разговора с психологом?</span><span class="faq-icon"></span></button><div class="faq-a"><p data-i18n="faq.a1">Психика работает на двух уровнях. Первый — сознательный: здесь мы анализируем, проговариваем, выстраиваем причинно-следственные цепочки. Второй — бессознательный, и он оперирует не словами, а образами. Символдрама обращается именно туда: вы проживаете образ, а через него открывается то, до чего логикой не добраться.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q2">За этим стоит наука или что-то другое?</span><span class="faq-icon"></span></button><div class="faq-a"><p data-i18n="faq.a2">Это клинический метод психотерапии с полувековой историей. Кататимно-имагинативную психотерапию создал немецкий психиатр Ханскарл Лёйнер в 1950-х, и с тех пор она применяется в клинической практике. Существуют стандарты обучения, профессиональная сертификация и научные публикации.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q3">Каким образом работа с образами решает жизненные трудности?</span><span class="faq-icon"></span></button><div class="faq-a"><p data-i18n="faq.a3">Корень трудности редко лежит на поверхности, где его ищет рациональный ум. Можно десятки раз всё себе проговорить и остаться в той же точке — потому что состоянием управляет не осознанная мысль, а глубинные слои, куда слова не проникают. Образ даёт к ним короткий доступ.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q4">Сколько понадобится встреч, прежде чем я замечу перемены?</span><span class="faq-icon"></span></button><div class="faq-a"><p data-i18n="faq.a4">Всё индивидуально. Точный ориентир я смогу дать только после того, как услышу вашу историю на ознакомительной беседе.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q5">Что будет на бесплатном звонке-знакомстве?</span><span class="faq-icon"></span></button><div class="faq-a"><p data-i18n="faq.a5">Короткая встреча на 15–20 минут. Вы описываете, что вас беспокоит, я отвечаю на вопросы, и мы вместе определяем, какой формат работы вам подойдёт.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q6">Какая продолжительность одной сессии?</span><span class="faq-icon"></span></button><div class="faq-a"><p data-i18n="faq.a6">Один час. Встречи проходят онлайн.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q7">С какой периодичностью лучше встречаться?</span><span class="faq-icon"></span></button><div class="faq-a"><p data-i18n="faq.a7">Оптимально — раз в неделю.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q8">На каком языке идут сессии?</span><span class="faq-icon"></span></button><div class="faq-a"><p data-i18n="faq.a8">На русском — как вам удобнее.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q9">Насколько это конфиденциально?</span><span class="faq-icon"></span></button><div class="faq-a"><p data-i18n="faq.a9">Абсолютно. Всё, что звучит на наших встречах и в переписке, не выходит за пределы кабинета.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q10">Если я не могу точно сформулировать, что со мной, — можно всё равно обратиться?</span><span class="faq-icon"></span></button><div class="faq-a"><p data-i18n="faq.a10">Разумеется. Не нужно заранее раскладывать всё по полочкам. Можно прийти как есть, а разбираться будем уже вместе.</p></div></div>
     </div>
   </div>
 </section>
@@ -652,11 +669,11 @@
   <div class="cta-bg"></div>
   <div class="cta-inner">
     <div class="cta-box reveal">
-      <span class="eyebrow">Первый шаг</span>
-      <h2>Приходите на<br/>бесплатную беседу</h2>
-      <p>Никакой подготовки не требуется. Не надо заранее раскладывать всё по полочкам. Просто приходите таким, какой вы есть, — а дальше мы во всём разберёмся.</p>
+      <span class="eyebrow" data-i18n="cta.end.eyebrow">Первый шаг</span>
+      <h2 data-i18n-html="cta.end.h2">Приходите на<br/>бесплатную беседу</h2>
+      <p data-i18n="cta.end.p">Никакой подготовки не требуется. Не надо заранее раскладывать всё по полочкам. Просто приходите таким, какой вы есть, — а дальше мы во всём разберёмся.</p>
       <div class="cta-actions">
-        <a class="btn btn-solid cta-tg" href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3l-3.3 15.6c-.25 1.1-.9 1.37-1.83.85l-5.05-3.72-2.44 2.35c-.27.27-.5.5-1.02.5l.36-5.16 9.4-8.49c.4-.36-.09-.56-.63-.2L4.15 13.1l-5-1.57c-1.09-.34-1.11-1.09.23-1.61l19.55-7.53c.9-.34 1.7.2 1.4 1.62z"/></svg>Записаться</a>
+        <a class="btn btn-solid cta-tg" href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3l-3.3 15.6c-.25 1.1-.9 1.37-1.83.85l-5.05-3.72-2.44 2.35c-.27.27-.5.5-1.02.5l.36-5.16 9.4-8.49c.4-.36-.09-.56-.63-.2L4.15 13.1l-5-1.57c-1.09-.34-1.11-1.09.23-1.61l19.55-7.53c.9-.34 1.7.2 1.4 1.62z"/></svg><span data-i18n="cta.book">Записаться</span></a>
       </div>
     </div>
   </div>
@@ -668,192 +685,597 @@
     <div class="foot-grid">
       <div class="foot-brand">
         <a href="#top" class="brand">
-          <span class="monogram">А&#8202;П</span>
+          <span class="monogram" data-i18n="brand.monogram">А&#8202;П</span>
           <span>
-            <div class="brand-name">АНАСТАСИЯ ПАЙКИНА</div>
-            <div class="brand-sub">Психолог и психотерапевт</div>
+            <div class="brand-name" data-i18n="brand.name">АНАСТАСИЯ ПАЙКИНА</div>
+            <div class="brand-sub" data-i18n="brand.sub">Психолог и психотерапевт</div>
           </span>
         </a>
       </div>
       <div class="foot-col">
-        <h4>Меню</h4>
-        <ul><li><a href="#about">Обо мне</a></li><li><a href="#method">Метод</a></li><li><a href="#services">Запросы</a></li><li><a href="#education">Образование</a></li><li><a href="#faq">Вопросы</a></li></ul>
+        <h4 data-i18n="footer.menu">Меню</h4>
+        <ul><li><a href="#about" data-i18n="nav.about">Обо мне</a></li><li><a href="#method" data-i18n="nav.method">Метод</a></li><li><a href="#services" data-i18n="nav.services">Запросы</a></li><li><a href="#education" data-i18n="nav.education">Образование</a></li><li><a href="#faq" data-i18n="nav.faq">Вопросы</a></li></ul>
       </div>
       <div class="foot-col">
-        <h4>Контакты</h4>
-        <ul><li>Онлайн - из любого города</li><li><a href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener">Telegram</a></li><li>Очно - по запросу</li></ul>
+        <h4 data-i18n="footer.contacts">Контакты</h4>
+        <ul><li data-i18n="footer.online">Онлайн - из любого города</li><li><a href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener">Telegram</a></li><li data-i18n="footer.offline">Очно - по запросу</li></ul>
       </div>
       <div class="foot-col">
-        <h4>Соцсети</h4>
+        <h4 data-i18n="footer.social">Соцсети</h4>
         <ul><li><a href="https://www.instagram.com/paykina_your_psy" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener">Telegram</a></li></ul>
       </div>
     </div>
     <div class="foot-bottom">
-      <div>&copy; 2026 Анастасия Пайкина. Психолог и психотерапевт.</div>
-      <div>Формат: онлайн (Google Meet) - из любого города · Язык: русский · Очно - по запросу</div>
+      <div data-i18n="footer.copy">&copy; 2026 Анастасия Пайкина. Психолог и психотерапевт.</div>
+      <div data-i18n="footer.format">Формат: онлайн (Google Meet) - из любого города · Язык: русский · Очно - по запросу</div>
     </div>
   </div>
 </footer>
 
-<!-- ============ MODAL (инфо «Как это работает») ============ -->
+<!-- ============ MODAL ============ -->
 <div class="modal-back" id="modal">
   <div class="modal">
-    <button class="close" id="modalClose" aria-label="Закрыть">&times;</button>
-    <h3 id="modalTitle">Как это работает</h3>
-    <p id="modalDesc">К сути мы добираемся не долгими разговорами, а через образ — язык, на котором говорит подсознание. Первый шаг — бесплатный звонок, потом полноценная сессия, а затем двигаемся в комфортном вам темпе.</p>
-    <a class="btn btn-solid" href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener">Сделать первый шаг</a>
+    <button class="close" id="modalClose" aria-label="Закрыть" data-i18n-aria="modal.close">&times;</button>
+    <h3 id="modalTitle" data-i18n="hero.howItWorks.btn">Как это работает</h3>
+    <p id="modalDesc" data-i18n="hero.howItWorks.desc">К сути мы добираемся не долгими разговорами, а через образ — язык, на котором говорит подсознание. Первый шаг — бесплатный звонок, потом полноценная сессия, а затем двигаемся в комфортном вам темпе.</p>
+    <a class="btn btn-solid" href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener" data-i18n="hero.cta">Сделать первый шаг</a>
   </div>
 </div>
 
-<!-- ============ SCRIPTS (clean, no external trackers) ============ -->
+<!-- ============ SCRIPTS ============ -->
 <script>
-  // ---- header scroll effect ----
-  const header = document.getElementById('header');
-  const onScroll = () => {
-    header.classList.toggle('scrolled', window.scrollY > 60);
-  };
-  window.addEventListener('scroll', onScroll); onScroll();
-
-  // ---- mobile drawer ----
-  const drawer = document.getElementById('drawer');
-  document.getElementById('hamburger').addEventListener('click', ()=>drawer.classList.add('open'));
-  document.getElementById('drawerClose').addEventListener('click', ()=>drawer.classList.remove('open'));
-  drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>drawer.classList.remove('open')));
-
-  // ---- modal (how it works) ----
-  const modal = document.getElementById('modal');
-  const title = document.getElementById('modalTitle');
-  const desc = document.getElementById('modalDesc');
-  function openModal(t, d){
-    title.textContent = t; desc.textContent = d;
-    modal.classList.add('open'); drawer.classList.remove('open');
+// ===================== I18N DICTIONARY =====================
+const i18n = {
+  ru: {
+    // brand
+    "brand.monogram": "А\u2006П",
+    "brand.name": "АНАСТАСИЯ ПАЙКИНА",
+    "brand.sub": "Психолог и психотерапевт",
+    // nav
+    "nav.about": "Обо мне",
+    "nav.method": "Метод",
+    "nav.services": "Запросы",
+    "nav.voices": "Истории",
+    "nav.faq": "Вопросы",
+    "nav.education": "Образование",
+    "nav.menu": "Меню",
+    // cta common
+    "cta.write": "НАПИСАТЬ",
+    "cta.book": "Записаться",
+    // hero
+    "hero.eyebrow": "Психотерапия онлайн — бережно и глубоко",
+    "hero.h1": "Нести всё на себе — <em>не единственный</em> путь",
+    "hero.p": "Знакомая тревога, которая не уходит. Одни и те же сценарии в отношениях. Внутренняя тяжесть, которой нет объяснения. С этим приходят ко мне — и шаг за шагом мы добираемся до того, что прячется за словами.",
+    "hero.cta": "Сделать первый шаг",
+    "hero.howItWorks.btn": "Как это работает",
+    "hero.howItWorks.desc": "К сути мы добираемся не долгими разговорами, а через образ — язык, на котором говорит подсознание. Первый шаг — бесплатный звонок, потом полноценная сессия, а затем двигаемся в комфортном вам темпе.",
+    "hero.imgAlt": "Анастасия Пайкина, психолог и психотерапевт",
+    // services
+    "services.eyebrow": "Темы, с которыми приходят",
+    "services.h2": "С чем я помогаю",
+    "services.card1.h3": "Когда трудно внутри",
+    "services.card1.p": "Постоянное напряжение и тревожный фон, который не отпускает. Ощущение, что вы себе не хозяин — и тяжёлый след прошлого, который никак не стирается.",
+    "services.card1.link": "Понять себя",
+    "services.card2.h3": "Когда трудно с другими",
+    "services.card2.p": "Ссоры, которые повторяются по кругу. Дистанция, растущая в паре. Сложные чувства к родителям, которые не получается ни высказать, ни отпустить.",
+    "services.card2.link": "Вернуть близость",
+    "services.card3.h3": "Когда привычный мир рушится",
+    "services.card3.p": "Развод, переезд, потеря — момент, в котором старые опоры исчезли, а новые ещё не появились. Состояние, когда непонятно, на что опереться и куда идти дальше.",
+    "services.card3.link": "Найти почву",
+    // quote
+    "quote.text": "Самое сложное — позволить себе начать.",
+    "quote.cite": "Анастасия Пайкина",
+    // method
+    "method.eyebrow": "Метод",
+    "method.h2": "Мой подход",
+    "method.lead": "Я работаю в подходе, где к сути идут не длинными разговорами, а бережнее и глубже — через воображение.",
+    "method.p1": "Образ — это язык, на котором говорит бессознательное. Через него мы касаемся того, что правит состоянием изнутри, но не укладывается в слова: давней тревоги, того, что держит годами.",
+    "method.p2": "То, что рассудком не объяснить, через образ вдруг проясняется. А когда что-то по-настоящему увидено — оно больше не властно над вами.",
+    // voices
+    "voices.eyebrow": "Живой опыт",
+    "voices.h2": "От первого лица",
+    "voices.note": "Имена и детали изменены",
+    "voices.v1": "Я искренне считала своей добродетелью то, что я удобная и никому не мешаю. А потом осознала: это не скромность, а ужас перед тем, что меня отодвинут, если я займу много места. С этим мы и стали работать — и я впервые разрешила себе быть заметной.",
+    "voices.v2": "Долго жил с ощущением, что всё решают обстоятельства. Не повезло, так вышло, время виновато. А когда стал копаться, обнаружил: я сам принимал кучу решений. Только раньше не хотел брать это на себя.",
+    "voices.v3": "Никакой катастрофы у меня не случилось. Всё будто бы хорошо, а внутри — выжженное поле. Я долго сомневалась, идти ли с таким к специалисту — казалось, недостаточно серьёзно. А потом поняла: именно с этим и надо.",
+    "voices.v4": "Не могу вспомнить, когда в последний раз по-настоящему выдыхала. Всё время в боевой готовности, словно сейчас что-то обрушится. На встречах я заново учусь не быть в постоянной обороне. И понимаю: безопасность — это не контроль, а внутреннее состояние.",
+    "voices.v5": "Думал, проблема в одиночестве. А проблема оказалась в том, что мне было невыносимо оставаться наедине с тишиной — потому что в ней проступало всё, от чего я много лет убегал.",
+    "voices.v6": "Была уверена: любовь надо заработать. Сначала стать достаточно хорошей — тогда, может, и мне достанется. Только в сорок семь я увидела, что заслуживать её было нужно не перед кем-то, а перед собой.",
+    "voices.v7": "Пришёл, если честно, с большим сомнением. Не верил, что беседы что-то меняют. А спустя пару месяцев заметил: на то, что раньше взрывало, реагирую ровнее. Одно это уже оправдало всё.",
+    "voices.cta": "Начать свою историю",
+    // about
+    "about.eyebrow": "Обо мне",
+    "about.h2": "Из тупика всегда есть путь —<br/>даже когда он не виден",
+    "about.p1": "Я практикующий психолог и психотерапевт. В моём опыте — работа с женщинами после насилия, с людьми, оставшимися без дома, с детьми, которым война оставила слишком тяжёлый след. Сегодня я веду частную онлайн-практику.",
+    "about.p2": "Мы привыкли разбираться в себе через логику — но то, что нами движет, обитает на другой глубине. Можно сотни раз всё рационально объяснить и не продвинуться ни на шаг: корень не в том, что мы осознаём, а в том, что чувствуем, не замечая.",
+    "about.signature": "Анастасия Пайкина",
+    "about.imgAlt": "Психолог и психотерапевт",
+    // process
+    "process.eyebrow": "С чего мы стартуем",
+    "process.h2": "Путь к себе — первые четыре шага",
+    "process.step1.h3": "Знакомство без обязательств",
+    "process.step1.p": "Бесплатный звонок: вы рассказываете, что привело. Я слушаю и отвечаю на любые вопросы.",
+    "process.step2.h3": "Погружение",
+    "process.step2.p": "Первая полноценная сессия. Через образ мы идём к тому, что скрыто. Часто уже на этом этапе становится понятно, где настоящая боль.",
+    "process.step3.h3": "Наш совместный ритм",
+    "process.step3.p": "Между встречами вы переносите пережитое на бумагу — рисунок вытаскивает то, что пока не получается выразить словами. Мы опираемся на это и движемся глубже.",
+    "process.step4.h3": "Сдвиг",
+    "process.step4.p": "То, что держало годами, понемногу отпускает. Появляется внутренняя устойчивость. Возвращается ощущение, что жизнь — ваша.",
+    // education
+    "education.eyebrow": "Образование и метод",
+    "education.h2": "Дипломы и сертификаты",
+    "education.diploma": "Диплом",
+    // arrows
+    "arrows.prev": "Назад",
+    "arrows.next": "Вперёд",
+    // faq
+    "faq.h2": "Частые вопросы",
+    "faq.q1": "В чём отличие символдрамы от привычного разговора с психологом?",
+    "faq.a1": "Психика работает на двух уровнях. Первый — сознательный: здесь мы анализируем, проговариваем, выстраиваем причинно-следственные цепочки. Второй — бессознательный, и он оперирует не словами, а образами. Символдрама обращается именно туда: вы проживаете образ, а через него открывается то, до чего логикой не добраться.",
+    "faq.q2": "За этим стоит наука или что-то другое?",
+    "faq.a2": "Это клинический метод психотерапии с полувековой историей. Кататимно-имагинативную психотерапию создал немецкий психиатр Ханскарл Лёйнер в 1950-х, и с тех пор она применяется в клинической практике. Существуют стандарты обучения, профессиональная сертификация и научные публикации.",
+    "faq.q3": "Каким образом работа с образами решает жизненные трудности?",
+    "faq.a3": "Корень трудности редко лежит на поверхности, где его ищет рациональный ум. Можно десятки раз всё себе проговорить и остаться в той же точке — потому что состоянием управляет не осознанная мысль, а глубинные слои, куда слова не проникают. Образ даёт к ним короткий доступ.",
+    "faq.q4": "Сколько понадобится встреч, прежде чем я замечу перемены?",
+    "faq.a4": "Всё индивидуально. Точный ориентир я смогу дать только после того, как услышу вашу историю на ознакомительной беседе.",
+    "faq.q5": "Что будет на бесплатном звонке-знакомстве?",
+    "faq.a5": "Короткая встреча на 15–20 минут. Вы описываете, что вас беспокоит, я отвечаю на вопросы, и мы вместе определяем, какой формат работы вам подойдёт.",
+    "faq.q6": "Какая продолжительность одной сессии?",
+    "faq.a6": "Один час. Встречи проходят онлайн.",
+    "faq.q7": "С какой периодичностью лучше встречаться?",
+    "faq.a7": "Оптимально — раз в неделю.",
+    "faq.q8": "На каком языке идут сессии?",
+    "faq.a8": "На русском — как вам удобнее.",
+    "faq.q9": "Насколько это конфиденциально?",
+    "faq.a9": "Абсолютно. Всё, что звучит на наших встречах и в переписке, не выходит за пределы кабинета.",
+    "faq.q10": "Если я не могу точно сформулировать, что со мной, — можно всё равно обратиться?",
+    "faq.a10": "Разумеется. Не нужно заранее раскладывать всё по полочкам. Можно прийти как есть, а разбираться будем уже вместе.",
+    // cta end
+    "cta.end.eyebrow": "Первый шаг",
+    "cta.end.h2": "Приходите на<br/>бесплатную беседу",
+    "cta.end.p": "Никакой подготовки не требуется. Не надо заранее раскладывать всё по полочкам. Просто приходите таким, какой вы есть, — а дальше мы во всём разберёмся.",
+    // footer
+    "footer.menu": "Меню",
+    "footer.contacts": "Контакты",
+    "footer.social": "Соцсети",
+    "footer.online": "Онлайн - из любого города",
+    "footer.offline": "Очно - по запросу",
+    "footer.copy": "&copy; 2026 Анастасия Пайкина. Психолог и психотерапевт.",
+    "footer.format": "Формат: онлайн (Google Meet) - из любого города · Язык: русский · Очно - по запросу",
+    // modal
+    "modal.close": "Закрыть",
+    // meta
+    "meta.title": "Анастасия Пайкина | Психолог-психотерапевт · Онлайн",
+    "meta.desc": "Анастасия Пайкина — психолог и психотерапевт. Онлайн-сессии на русском: тревожность, отношения, жизненные кризисы. Символдрама — глубинная работа через образы. Бесплатная первая встреча.",
+    "meta.ogTitle": "Анастасия Пайкина | Психолог и психотерапевт онлайн",
+    "meta.ogDesc": "Онлайн-сессии на русском: тревожность, отношения, жизненные кризисы. Символдрама — глубинная работа через образы. Бесплатная первая встреча.",
+    "meta.ogImgAlt": "Анастасия Пайкина — психолог, психотерапевт",
+    "meta.twTitle": "Анастасия Пайкина | Психолог и психотерапевт онлайн",
+    "meta.twDesc": "Онлайн-сессии на русском: тревожность, отношения, жизненные кризисы. Символдрама — глубинная работа через образы.",
+    "meta.ldName": "Анастасия Пайкина",
+    "meta.ldJobTitle": "Психолог, психотерапевт",
+    "meta.ldDesc": "Психолог и психотерапевт. Онлайн-сессии методом символдрамы — глубинная работа через образы.",
+    "meta.ldSvcName": "Анастасия Пайкина — психолог и психотерапевт",
+    "meta.ldSvcDesc": "Онлайн-консультации психолога и психотерапевта: тревожность, отношения, жизненные кризисы. Метод символдрамы.",
+    "meta.ldSvcType": "Психотерапия, психологическое консультирование (онлайн)"
+  },
+  uk: {
+    // brand
+    "brand.monogram": "А\u2006П",
+    "brand.name": "АНАСТАСІЯ ПАЙКІНА",
+    "brand.sub": "Психолог і психотерапевт",
+    // nav
+    "nav.about": "Про мене",
+    "nav.method": "Метод",
+    "nav.services": "Запити",
+    "nav.voices": "Історії",
+    "nav.faq": "Запитання",
+    "nav.education": "Освіта",
+    "nav.menu": "Меню",
+    // cta common
+    "cta.write": "НАПИСАТИ",
+    "cta.book": "Записатися",
+    // hero
+    "hero.eyebrow": "Психотерапія онлайн — дбайливо та глибоко",
+    "hero.h1": "Нести все на собі — <em>не єдиний</em> шлях",
+    "hero.p": "Знайома тривога, яка не минає. Одні й ті самі сценарії у стосунках. Внутрішня важкість, якій немає пояснення. З цим приходять до мене — і крок за кроком ми добираємося до того, що ховається за словами.",
+    "hero.cta": "Зробити перший крок",
+    "hero.howItWorks.btn": "Як це працює",
+    "hero.howItWorks.desc": "До суті ми добираємося не довгими розмовами, а через образ — мову, якою говорить підсвідомість. Перший крок — безкоштовний дзвінок, потім повноцінна сесія, а далі рухаємося в комфортному для вас темпі.",
+    "hero.imgAlt": "Анастасія Пайкіна, психолог і психотерапевт",
+    // services
+    "services.eyebrow": "Теми, з якими приходять",
+    "services.h2": "З чим я допомагаю",
+    "services.card1.h3": "Коли важко всередині",
+    "services.card1.p": "Постійне напруження та тривожний фон, який не відпускає. Відчуття, що ви собі не господар — і важкий слід минулого, який ніяк не стирається.",
+    "services.card1.link": "Зрозуміти себе",
+    "services.card2.h3": "Коли важко з іншими",
+    "services.card2.p": "Сварки, які повторюються по колу. Дистанція, що зростає в парі. Складні почуття до батьків, які не виходить ні висловити, ні відпустити.",
+    "services.card2.link": "Повернути близькість",
+    "services.card3.h3": "Коли звичний світ руйнується",
+    "services.card3.p": "Розлучення, переїзд, втрата — момент, коли старі опори зникли, а нові ще не з'явилися. Стан, коли незрозуміло, на що спертися і куди йти далі.",
+    "services.card3.link": "Знайти ґрунт",
+    // quote
+    "quote.text": "Найскладніше — дозволити собі почати.",
+    "quote.cite": "Анастасія Пайкіна",
+    // method
+    "method.eyebrow": "Метод",
+    "method.h2": "Мій підхід",
+    "method.lead": "Я працюю в підході, де до суті йдуть не довгими розмовами, а дбайливіше та глибше — через уяву.",
+    "method.p1": "Образ — це мова, якою говорить несвідоме. Через нього ми торкаємося того, що керує станом зсередини, але не вкладається в слова: давньої тривоги, того, що тримає роками.",
+    "method.p2": "Те, що розумом не пояснити, через образ раптом прояснюється. А коли щось по-справжньому побачене — воно більше не владне над вами.",
+    // voices
+    "voices.eyebrow": "Живий досвід",
+    "voices.h2": "Від першої особи",
+    "voices.note": "Імена та деталі змінені",
+    "voices.v1": "Я щиро вважала своєю чеснотою те, що я зручна і нікому не заважаю. А потім усвідомила: це не скромність, а жах перед тим, що мене відсунуть, якщо я займу багато місця. З цим ми і стали працювати — і я вперше дозволила собі бути помітною.",
+    "voices.v2": "Довго жив із відчуттям, що все вирішують обставини. Не пощастило, так склалося, час винен. А коли став розбиратися, виявив: я сам приймав купу рішень. Тільки раніше не хотів брати це на себе.",
+    "voices.v3": "Жодної катастрофи в мене не сталося. Все нібито добре, а всередині — випалене поле. Я довго сумнівалася, чи йти з таким до фахівця — здавалося, недостатньо серйозно. А потім зрозуміла: саме з цим і треба.",
+    "voices.v4": "Не можу згадати, коли востаннє по-справжньому видихала. Весь час у бойовій готовності, ніби зараз щось обвалиться. На зустрічах я заново вчуся не бути в постійній обороні. І розумію: безпека — це не контроль, а внутрішній стан.",
+    "voices.v5": "Думав, проблема в самотності. А проблема виявилася в тому, що мені було нестерпно залишатися наодинці з тишею — бо в ній проступало все, від чого я багато років тікав.",
+    "voices.v6": "Була впевнена: любов треба заробити. Спочатку стати достатньо хорошою — тоді, може, й мені дістанеться. Тільки в сорок сім я побачила, що заслуговувати її потрібно було не перед кимось, а перед собою.",
+    "voices.v7": "Прийшов, якщо чесно, з великим сумнівом. Не вірив, що бесіди щось змінюють. А через пару місяців помітив: на те, що раніше вибухало, реагую рівніше. Одне це вже виправдало все.",
+    "voices.cta": "Почати свою історію",
+    // about
+    "about.eyebrow": "Про мене",
+    "about.h2": "З глухого кута завжди є шлях —<br/>навіть коли його не видно",
+    "about.p1": "Я практикуючий психолог і психотерапевт. У моєму досвіді — робота з жінками після насильства, з людьми, які залишилися без дому, з дітьми, яким війна залишила надто важкий слід. Сьогодні я веду приватну онлайн-практику.",
+    "about.p2": "Ми звикли розбиратися в собі через логіку — але те, що нами рухає, живе на іншій глибині. Можна сотні разів усе раціонально пояснити і не просунутися ні на крок: корінь не в тому, що ми усвідомлюємо, а в тому, що відчуваємо, не помічаючи.",
+    "about.signature": "Анастасія Пайкіна",
+    "about.imgAlt": "Психолог і психотерапевт",
+    // process
+    "process.eyebrow": "З чого ми стартуємо",
+    "process.h2": "Шлях до себе — перші чотири кроки",
+    "process.step1.h3": "Знайомство без зобов'язань",
+    "process.step1.p": "Безкоштовний дзвінок: ви розповідаєте, що привело. Я слухаю і відповідаю на будь-які запитання.",
+    "process.step2.h3": "Занурення",
+    "process.step2.p": "Перша повноцінна сесія. Через образ ми йдемо до того, що приховано. Часто вже на цьому етапі стає зрозуміло, де справжній біль.",
+    "process.step3.h3": "Наш спільний ритм",
+    "process.step3.p": "Між зустрічами ви переносите пережите на папір — малюнок витягує те, що поки не виходить висловити словами. Ми спираємося на це і рухаємося глибше.",
+    "process.step4.h3": "Зрушення",
+    "process.step4.p": "Те, що тримало роками, потроху відпускає. З'являється внутрішня стійкість. Повертається відчуття, що життя — ваше.",
+    // education
+    "education.eyebrow": "Освіта та метод",
+    "education.h2": "Дипломи та сертифікати",
+    "education.diploma": "Диплом",
+    // arrows
+    "arrows.prev": "Назад",
+    "arrows.next": "Вперед",
+    // faq
+    "faq.h2": "Часті запитання",
+    "faq.q1": "У чому відмінність символдрами від звичної розмови з психологом?",
+    "faq.a1": "Психіка працює на двох рівнях. Перший — свідомий: тут ми аналізуємо, промовляємо, вибудовуємо причинно-наслідкові ланцюжки. Другий — несвідомий, і він оперує не словами, а образами. Символдрама звертається саме туди: ви проживаєте образ, а через нього відкривається те, до чого логікою не дістатися.",
+    "faq.q2": "За цим стоїть наука чи щось інше?",
+    "faq.a2": "Це клінічний метод психотерапії з піввіковою історією. Кататимно-імагінативну психотерапію створив німецький психіатр Ханскарл Льойнер у 1950-х, і з тих пір вона застосовується в клінічній практиці. Існують стандарти навчання, професійна сертифікація та наукові публікації.",
+    "faq.q3": "Яким чином робота з образами вирішує життєві труднощі?",
+    "faq.a3": "Корінь труднощів рідко лежить на поверхні, де його шукає раціональний розум. Можна десятки разів усе собі проговорити і залишитися в тій самій точці — тому що станом керує не усвідомлена думка, а глибинні шари, куди слова не проникають. Образ дає до них короткий доступ.",
+    "faq.q4": "Скільки знадобиться зустрічей, перш ніж я помічу зміни?",
+    "faq.a4": "Все індивідуально. Точний орієнтир я зможу дати тільки після того, як почую вашу історію на ознайомчій бесіді.",
+    "faq.q5": "Що буде на безкоштовному дзвінку-знайомстві?",
+    "faq.a5": "Коротка зустріч на 15–20 хвилин. Ви описуєте, що вас турбує, я відповідаю на запитання, і ми разом визначаємо, який формат роботи вам підійде.",
+    "faq.q6": "Яка тривалість однієї сесії?",
+    "faq.a6": "Одна година. Зустрічі проходять онлайн.",
+    "faq.q7": "З якою періодичністю краще зустрічатися?",
+    "faq.a7": "Оптимально — раз на тиждень.",
+    "faq.q8": "Якою мовою проходять сесії?",
+    "faq.a8": "Російською або українською — як вам зручніше.",
+    "faq.q9": "Наскільки це конфіденційно?",
+    "faq.a9": "Абсолютно. Все, що звучить на наших зустрічах і в листуванні, не виходить за межі кабінету.",
+    "faq.q10": "Якщо я не можу точно сформулювати, що зі мною, — чи можна все одно звернутися?",
+    "faq.a10": "Звісно. Не потрібно заздалегідь розкладати все по поличках. Можна прийти як є, а розбиратися будемо вже разом.",
+    // cta end
+    "cta.end.eyebrow": "Перший крок",
+    "cta.end.h2": "Приходьте на<br/>безкоштовну бесіду",
+    "cta.end.p": "Жодної підготовки не потрібно. Не треба заздалегідь розкладати все по поличках. Просто приходьте таким, яким ви є, — а далі ми в усьому розберемося.",
+    // footer
+    "footer.menu": "Меню",
+    "footer.contacts": "Контакти",
+    "footer.social": "Соцмережі",
+    "footer.online": "Онлайн - з будь-якого міста",
+    "footer.offline": "Очно - за запитом",
+    "footer.copy": "&copy; 2026 Анастасія Пайкіна. Психолог і психотерапевт.",
+    "footer.format": "Формат: онлайн (Google Meet) - з будь-якого міста · Мова: українська, російська · Очно - за запитом",
+    // modal
+    "modal.close": "Закрити",
+    // meta
+    "meta.title": "Анастасія Пайкіна | Психолог-психотерапевт · Онлайн",
+    "meta.desc": "Анастасія Пайкіна — психолог і психотерапевт. Онлайн-сесії українською та російською: тривожність, стосунки, життєві кризи. Символдрама — глибинна робота через образи. Безкоштовна перша зустріч.",
+    "meta.ogTitle": "Анастасія Пайкіна | Психолог і психотерапевт онлайн",
+    "meta.ogDesc": "Онлайн-сесії українською та російською: тривожність, стосунки, життєві кризи. Символдрама — глибинна робота через образи. Безкоштовна перша зустріч.",
+    "meta.ogImgAlt": "Анастасія Пайкіна — психолог, психотерапевт",
+    "meta.twTitle": "Анастасія Пайкіна | Психолог і психотерапевт онлайн",
+    "meta.twDesc": "Онлайн-сесії українською та російською: тривожність, стосунки, життєві кризи. Символдрама — глибинна робота через образи.",
+    "meta.ldName": "Анастасія Пайкіна",
+    "meta.ldJobTitle": "Психолог, психотерапевт",
+    "meta.ldDesc": "Психолог і психотерапевт. Онлайн-сесії методом символдрами — глибинна робота через образи.",
+    "meta.ldSvcName": "Анастасія Пайкіна — психолог і психотерапевт",
+    "meta.ldSvcDesc": "Онлайн-консультації психолога та психотерапевта: тривожність, стосунки, життєві кризи. Метод символдрами.",
+    "meta.ldSvcType": "Психотерапія, психологічне консультування (онлайн)"
   }
-  document.getElementById('modalClose').addEventListener('click', ()=>modal.classList.remove('open'));
-  modal.addEventListener('click', e=>{ if(e.target===modal) modal.classList.remove('open'); });
+};
 
-  document.addEventListener('keydown', e=>{ if(e.key==='Escape'){ modal.classList.remove('open'); } });
+// ===================== LANGUAGE DETECTION & APPLICATION =====================
+const LANG_KEY = 'psy-site-lang';
 
-  // ---- diplomas carousel: arrows + drag-to-scroll ----
-  (function () {
-    var dTrack = document.getElementById('diplomasTrack');
-    if (!dTrack) return;
-    function dStep() {
-      var card = dTrack.querySelector('.diploma-card');
-      var gap = parseFloat(getComputedStyle(dTrack).columnGap || getComputedStyle(dTrack).gap || 18) || 18;
-      return card ? card.getBoundingClientRect().width + gap : 278;
+function detectLang() {
+  // 1. localStorage
+  var saved = localStorage.getItem(LANG_KEY);
+  if (saved === 'uk' || saved === 'ru') return saved;
+
+  // 2. browser preference
+  var navLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+  if (navLang.indexOf('uk') === 0) return 'uk';
+  if (navLang.indexOf('ru') === 0) return 'ru';
+
+  // 3. check all browser languages
+  if (navigator.languages) {
+    for (var i = 0; i < navigator.languages.length; i++) {
+      var l = navigator.languages[i].toLowerCase();
+      if (l.indexOf('uk') === 0) return 'uk';
+      if (l.indexOf('ru') === 0) return 'ru';
     }
-    var dPrev = document.getElementById('diplomasPrev');
-    var dNext = document.getElementById('diplomasNext');
-    if (dPrev) dPrev.addEventListener('click', function () { dTrack.scrollBy({ left: -dStep(), behavior: 'smooth' }); });
-    if (dNext) dNext.addEventListener('click', function () { dTrack.scrollBy({ left: dStep(), behavior: 'smooth' }); });
+  }
 
-    var dDown = false, dStartX = 0, dStartScroll = 0, dMoved = 0;
-    dTrack.addEventListener('pointerdown', function (e) {
-      dDown = true; dMoved = 0; dStartX = e.clientX; dStartScroll = dTrack.scrollLeft;
-      dTrack.classList.add('dragging');
+  // 4. default to ru
+  return 'ru';
+}
+
+function applyLang(lang) {
+  var dict = i18n[lang];
+
+  // Update html lang attribute
+  document.getElementById('htmlRoot').setAttribute('lang', lang === 'uk' ? 'uk' : 'ru');
+
+  // Update all [data-i18n] elements (textContent)
+  var els = document.querySelectorAll('[data-i18n]');
+  for (var i = 0; i < els.length; i++) {
+    var key = els[i].getAttribute('data-i18n');
+    if (dict[key] !== undefined) {
+      els[i].textContent = dict[key];
+    }
+  }
+
+  // Update all [data-i18n-html] elements (innerHTML)
+  var elsHtml = document.querySelectorAll('[data-i18n-html]');
+  for (var j = 0; j < elsHtml.length; j++) {
+    var keyHtml = elsHtml[j].getAttribute('data-i18n-html');
+    if (dict[keyHtml] !== undefined) {
+      elsHtml[j].innerHTML = dict[keyHtml];
+    }
+  }
+
+  // Update all [data-i18n-alt] elements (alt attribute)
+  var elsAlt = document.querySelectorAll('[data-i18n-alt]');
+  for (var k = 0; k < elsAlt.length; k++) {
+    var keyAlt = elsAlt[k].getAttribute('data-i18n-alt');
+    if (dict[keyAlt] !== undefined) {
+      elsAlt[k].setAttribute('alt', dict[keyAlt]);
+    }
+  }
+
+  // Update all [data-i18n-aria] elements (aria-label)
+  var elsAria = document.querySelectorAll('[data-i18n-aria]');
+  for (var m = 0; m < elsAria.length; m++) {
+    var keyAria = elsAria[m].getAttribute('data-i18n-aria');
+    if (dict[keyAria] !== undefined) {
+      elsAria[m].setAttribute('aria-label', dict[keyAria]);
+    }
+  }
+
+  // Update meta tags
+  document.getElementById('pageTitle').textContent = dict['meta.title'];
+  document.getElementById('metaDesc').setAttribute('content', dict['meta.desc']);
+  document.getElementById('ogTitle').setAttribute('content', dict['meta.ogTitle']);
+  document.getElementById('ogDesc').setAttribute('content', dict['meta.ogDesc']);
+  document.getElementById('ogImgAlt').setAttribute('content', dict['meta.ogImgAlt']);
+  document.getElementById('ogLocale').setAttribute('content', lang === 'uk' ? 'uk_UA' : 'ru_RU');
+  document.getElementById('twTitle').setAttribute('content', dict['meta.twTitle']);
+  document.getElementById('twDesc').setAttribute('content', dict['meta.twDesc']);
+
+  // Update JSON-LD
+  var ldScript = document.getElementById('ldJson');
+  var ld = JSON.parse(ldScript.textContent);
+  ld['@graph'][0].name = dict['meta.ldName'];
+  ld['@graph'][0].jobTitle = dict['meta.ldJobTitle'];
+  ld['@graph'][0].description = dict['meta.ldDesc'];
+  ld['@graph'][0].knowsLanguage = lang === 'uk' ? ['uk', 'ru'] : ['ru'];
+  ld['@graph'][1].name = dict['meta.ldSvcName'];
+  ld['@graph'][1].description = dict['meta.ldSvcDesc'];
+  ld['@graph'][1].serviceType = dict['meta.ldSvcType'];
+  ld['@graph'][1].availableLanguage = lang === 'uk' ? ['uk', 'ru'] : ['ru'];
+  ldScript.textContent = JSON.stringify(ld, null, 2);
+
+  // Update lang switcher buttons
+  var allBtns = document.querySelectorAll('.lang-switcher button[data-lang]');
+  for (var n = 0; n < allBtns.length; n++) {
+    var btn = allBtns[n];
+    if (btn.getAttribute('data-lang') === lang) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  }
+
+  // Re-set FAQ accordion heights after text change
+  var faqItems = document.querySelectorAll('.faq-item');
+  for (var p = 0; p < faqItems.length; p++) {
+    var a = faqItems[p].querySelector('.faq-a');
+    if (faqItems[p].classList.contains('open')) {
+      a.style.maxHeight = a.scrollHeight + 'px';
+    }
+  }
+}
+
+function setLang(lang) {
+  localStorage.setItem(LANG_KEY, lang);
+  applyLang(lang);
+}
+
+// ===================== INIT =====================
+var currentLang = detectLang();
+applyLang(currentLang);
+
+// Attach lang switcher events
+var switcherBtns = document.querySelectorAll('.lang-switcher button[data-lang]');
+for (var i = 0; i < switcherBtns.length; i++) {
+  switcherBtns[i].addEventListener('click', function() {
+    setLang(this.getAttribute('data-lang'));
+  });
+}
+
+// ===================== MODAL (i18n-aware) =====================
+function openModalI18n(keyPrefix) {
+  var dict = i18n[currentLang];
+  var t = dict[keyPrefix + '.btn'] || '';
+  var d = dict[keyPrefix + '.desc'] || '';
+  var titleEl = document.getElementById('modalTitle');
+  var descEl = document.getElementById('modalDesc');
+  titleEl.textContent = t;
+  descEl.textContent = d;
+  document.getElementById('modal').classList.add('open');
+  document.getElementById('drawer').classList.remove('open');
+}
+
+// ---- header scroll effect ----
+var header = document.getElementById('header');
+var onScrollFn = function() {
+  header.classList.toggle('scrolled', window.scrollY > 60);
+};
+window.addEventListener('scroll', onScrollFn); onScrollFn();
+
+// ---- mobile drawer ----
+var drawer = document.getElementById('drawer');
+document.getElementById('hamburger').addEventListener('click', function() { drawer.classList.add('open'); });
+document.getElementById('drawerClose').addEventListener('click', function() { drawer.classList.remove('open'); });
+drawer.querySelectorAll('a').forEach(function(a) { a.addEventListener('click', function() { drawer.classList.remove('open'); }); });
+
+// ---- modal close ----
+var modalEl = document.getElementById('modal');
+document.getElementById('modalClose').addEventListener('click', function() { modalEl.classList.remove('open'); });
+modalEl.addEventListener('click', function(e) { if (e.target === modalEl) modalEl.classList.remove('open'); });
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { modalEl.classList.remove('open'); } });
+
+// ---- diplomas carousel ----
+(function () {
+  var dTrack = document.getElementById('diplomasTrack');
+  if (!dTrack) return;
+  function dStep() {
+    var card = dTrack.querySelector('.diploma-card');
+    var gap = parseFloat(getComputedStyle(dTrack).columnGap || getComputedStyle(dTrack).gap || 18) || 18;
+    return card ? card.getBoundingClientRect().width + gap : 278;
+  }
+  var dPrev = document.getElementById('diplomasPrev');
+  var dNext = document.getElementById('diplomasNext');
+  if (dPrev) dPrev.addEventListener('click', function () { dTrack.scrollBy({ left: -dStep(), behavior: 'smooth' }); });
+  if (dNext) dNext.addEventListener('click', function () { dTrack.scrollBy({ left: dStep(), behavior: 'smooth' }); });
+
+  var dDown = false, dStartX = 0, dStartScroll = 0, dMoved = 0;
+  dTrack.addEventListener('pointerdown', function (e) {
+    dDown = true; dMoved = 0; dStartX = e.clientX; dStartScroll = dTrack.scrollLeft;
+    dTrack.classList.add('dragging');
+  });
+  dTrack.addEventListener('pointermove', function (e) {
+    if (!dDown) return;
+    var dx = e.clientX - dStartX; dMoved = Math.abs(dx);
+    dTrack.scrollLeft = dStartScroll - dx;
+  });
+  function dEnd() { if (!dDown) return; dDown = false; dTrack.classList.remove('dragging'); }
+  dTrack.addEventListener('pointerup', dEnd);
+  dTrack.addEventListener('pointerleave', dEnd);
+  dTrack.addEventListener('pointercancel', dEnd);
+  dTrack.addEventListener('click', function (e) { if (dMoved > 6) { e.preventDefault(); e.stopPropagation(); } }, true);
+})();
+
+// ---- diplomas lightbox ----
+(function () {
+  var cards = document.querySelectorAll('.diploma-card img');
+  if (!cards.length) return;
+  var overlay = document.createElement('div');
+  overlay.className = 'diploma-overlay';
+  overlay.innerHTML = '<button class="diploma-close" aria-label="' + i18n[currentLang]['modal.close'] + '">&times;</button><img src="" alt="' + i18n[currentLang]['education.diploma'] + '" />';
+  document.body.appendChild(overlay);
+  var overlayImg = overlay.querySelector('img');
+  var closeBtn = overlay.querySelector('.diploma-close');
+  function openLightbox(src) {
+    overlayImg.src = src;
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    overlay.classList.remove('open');
+    overlayImg.src = '';
+    document.body.style.overflow = '';
+  }
+  cards.forEach(function (img) {
+    img.addEventListener('click', function (e) {
+      openLightbox(img.src);
     });
-    dTrack.addEventListener('pointermove', function (e) {
-      if (!dDown) return;
-      var dx = e.clientX - dStartX; dMoved = Math.abs(dx);
-      dTrack.scrollLeft = dStartScroll - dx;
-    });
-    function dEnd() { if (!dDown) return; dDown = false; dTrack.classList.remove('dragging'); }
-    dTrack.addEventListener('pointerup', dEnd);
-    dTrack.addEventListener('pointerleave', dEnd);
-    dTrack.addEventListener('pointercancel', dEnd);
-    dTrack.addEventListener('click', function (e) { if (dMoved > 6) { e.preventDefault(); e.stopPropagation(); } }, true);
-  })();
+  });
+  closeBtn.addEventListener('click', closeLightbox);
+  overlay.addEventListener('click', function (e) { if (e.target === overlay) closeLightbox(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('open')) closeLightbox(); });
+})();
 
-  // ---- diplomas lightbox ----
-  (function () {
-    var cards = document.querySelectorAll('.diploma-card img');
-    if (!cards.length) return;
-    var overlay = document.createElement('div');
-    overlay.className = 'diploma-overlay';
-    overlay.innerHTML = '<button class="diploma-close" aria-label="Закрыть">&times;</button><img src="" alt="Диплом" />';
-    document.body.appendChild(overlay);
-    var overlayImg = overlay.querySelector('img');
-    var closeBtn = overlay.querySelector('.diploma-close');
-    function openLightbox(src) {
-      overlayImg.src = src;
-      overlay.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    }
-    function closeLightbox() {
-      overlay.classList.remove('open');
-      overlayImg.src = '';
-      document.body.style.overflow = '';
-    }
-    cards.forEach(function (img) {
-      img.addEventListener('click', function (e) {
-        openLightbox(img.src);
+// ---- reveal on scroll ----
+var io = new IntersectionObserver(function(entries) {
+  entries.forEach(function(en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(function(el) { io.observe(el); });
+
+// ---- voices carousel ----
+(function () {
+  var track = document.getElementById('voicesTrack');
+  if (!track) return;
+  function step() {
+    var card = track.querySelector('.voice-card');
+    var gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap || 28) || 28;
+    return card ? card.getBoundingClientRect().width + gap : 320;
+  }
+  var prev = document.getElementById('voicesPrev');
+  var next = document.getElementById('voicesNext');
+  if (prev) prev.addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); });
+  if (next) next.addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); });
+
+  var down = false, startX = 0, startScroll = 0, moved = 0;
+  track.addEventListener('pointerdown', function (e) {
+    down = true; moved = 0; startX = e.clientX; startScroll = track.scrollLeft;
+    track.classList.add('dragging');
+  });
+  track.addEventListener('pointermove', function (e) {
+    if (!down) return;
+    var dx = e.clientX - startX; moved = Math.abs(dx);
+    track.scrollLeft = startScroll - dx;
+  });
+  function end() { if (!down) return; down = false; track.classList.remove('dragging'); }
+  track.addEventListener('pointerup', end);
+  track.addEventListener('pointerleave', end);
+  track.addEventListener('pointercancel', end);
+  track.addEventListener('click', function (e) { if (moved > 6) { e.preventDefault(); e.stopPropagation(); } }, true);
+})();
+
+// ---- faq accordion ----
+(function () {
+  var items = document.querySelectorAll('.faq-item');
+  function setH(item) {
+    var a = item.querySelector('.faq-a');
+    a.style.maxHeight = item.classList.contains('open') ? (a.scrollHeight + 'px') : '0px';
+  }
+  items.forEach(function (item) {
+    var q = item.querySelector('.faq-q');
+    q.addEventListener('click', function () {
+      var isOpen = item.classList.contains('open');
+      items.forEach(function (other) {
+        if (other !== item) { other.classList.remove('open'); setH(other); }
       });
-    });
-    closeBtn.addEventListener('click', closeLightbox);
-    overlay.addEventListener('click', function (e) { if (e.target === overlay) closeLightbox(); });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('open')) closeLightbox(); });
-  })();
-
-  // ---- reveal on scroll ----
-  const io = new IntersectionObserver((entries)=>{
-    entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} });
-  }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-
-  // ---- voices carousel: arrows + drag-to-scroll ----
-  (function () {
-    var track = document.getElementById('voicesTrack');
-    if (!track) return;
-    function step() {
-      var card = track.querySelector('.voice-card');
-      var gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap || 28) || 28;
-      return card ? card.getBoundingClientRect().width + gap : 320;
-    }
-    var prev = document.getElementById('voicesPrev');
-    var next = document.getElementById('voicesNext');
-    if (prev) prev.addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); });
-    if (next) next.addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); });
-
-    var down = false, startX = 0, startScroll = 0, moved = 0;
-    track.addEventListener('pointerdown', function (e) {
-      down = true; moved = 0; startX = e.clientX; startScroll = track.scrollLeft;
-      track.classList.add('dragging');
-    });
-    track.addEventListener('pointermove', function (e) {
-      if (!down) return;
-      var dx = e.clientX - startX; moved = Math.abs(dx);
-      track.scrollLeft = startScroll - dx;
-    });
-    function end() { if (!down) return; down = false; track.classList.remove('dragging'); }
-    track.addEventListener('pointerup', end);
-    track.addEventListener('pointerleave', end);
-    track.addEventListener('pointercancel', end);
-    track.addEventListener('click', function (e) { if (moved > 6) { e.preventDefault(); e.stopPropagation(); } }, true);
-  })();
-
-  // ---- faq accordion ----
-  (function () {
-    var items = document.querySelectorAll('.faq-item');
-    function setH(item) {
-      var a = item.querySelector('.faq-a');
-      a.style.maxHeight = item.classList.contains('open') ? (a.scrollHeight + 'px') : '0px';
-    }
-    items.forEach(function (item) {
-      var q = item.querySelector('.faq-q');
-      q.addEventListener('click', function () {
-        var isOpen = item.classList.contains('open');
-        items.forEach(function (other) {
-          if (other !== item) { other.classList.remove('open'); setH(other); }
-        });
-        item.classList.toggle('open', !isOpen);
-        setH(item);
-      });
+      item.classList.toggle('open', !isOpen);
       setH(item);
     });
-    window.addEventListener('resize', function () {
-      items.forEach(function (item) { if (item.classList.contains('open')) setH(item); });
-    });
-  })();
+    setH(item);
+  });
+  window.addEventListener('resize', function () {
+    items.forEach(function (item) { if (item.classList.contains('open')) setH(item); });
+  });
+})();
 </script>
 
 </body>

@@ -177,8 +177,8 @@
   .hero-text{padding:120px 0 60px;max-width:560px;position:relative;z-index:2;}
   .hero-text .eyebrow{margin-bottom:26px;display:block;}
   .hero-text h1{font-size:68px;font-weight:500;letter-spacing:.004em;}
-  .hero-text h1 em{font-style:italic;font-weight:500;}
-  .hero-text p{margin:30px 0 38px;font-size:15px;max-width:430px;font-weight:400;}
+  .hero-text h1 strong{font-weight:700;}
+  .hero-text p{margin:30px 0 38px;font-size:15px;max-width:430px;font-weight:400;text-align:justify;}
   .hero-actions{display:flex;align-items:center;gap:30px;flex-wrap:wrap;}
   .hero-photo{position:absolute;top:0;right:0;width:50vw;max-width:760px;height:100vh;}
   .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:72% center;}
@@ -190,8 +190,8 @@
   .about-text{padding:var(--sec) 96px var(--sec) 90px;max-width:640px;}
   .about-text .eyebrow{display:block;margin-bottom:26px;}
   .about-text h2{font-size:42px;margin-bottom:30px;}
-  .about-text p{font-size:14.5px;margin-bottom:22px;max-width:450px;}
-  .signature{font-family:var(--serif);font-style:italic;font-size:34px;color:var(--ink);margin-top:26px;line-height:1;}
+  .about-text p{font-size:14.5px;margin-bottom:22px;max-width:450px;text-align:justify;}
+  .signature{font-family:var(--serif);font-weight:700;font-size:34px;color:var(--ink);margin-top:26px;line-height:1;}
 
   /* ---------- services ---------- */
   .services{padding:var(--sec) 0;background:var(--cream);text-align:center;}
@@ -201,7 +201,7 @@
   .svc .icon{height:54px;margin-bottom:28px;color:var(--brown);}
   .svc .icon svg{height:48px;width:auto;}
   .svc h3{font-family:var(--serif);font-size:25px;color:var(--ink);font-weight:500;letter-spacing:.01em;margin-bottom:14px;}
-  .svc p{font-size:13.5px;margin-bottom:22px;}
+  .svc p{font-size:13.5px;margin-bottom:22px;text-align:justify;}
   .learn{display:inline-flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);font-weight:600;transition:.3s;background:none;border:none;cursor:pointer;font-family:var(--sans);padding:0;}
   .learn svg{transition:.3s;}
   .learn:hover{color:var(--brown);}
@@ -213,8 +213,8 @@
   .method .eyebrow{display:block;margin-bottom:18px;}
   .method h2{font-size:44px;margin-bottom:14px;}
   .method .mark{font-family:var(--serif);font-size:90px;line-height:.5;color:var(--brown);opacity:.5;display:block;margin:6px 0 30px;}
-  .method p{font-size:16px;line-height:1.85;color:#645B4F;margin:0 auto 22px;max-width:660px;}
-  .method p.lead{font-family:var(--serif);font-size:25px;line-height:1.5;color:var(--ink);font-style:italic;max-width:600px;margin-bottom:34px;}
+  .method p{font-size:16px;line-height:1.85;color:#645B4F;margin:0 auto 22px;max-width:660px;text-align:justify;}
+  .method p.lead{font-family:var(--serif);font-size:25px;line-height:1.5;color:var(--ink);font-weight:700;max-width:600px;margin-bottom:34px;}
 
   /* ---------- quote ---------- */
   .quote{position:relative;height:340px;display:flex;align-items:center;overflow:hidden;background:#F5E8E1;}
@@ -232,7 +232,7 @@
   .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:48px;text-align:left;}
   .step .num{font-family:var(--serif);font-size:54px;color:var(--taupe);font-weight:500;line-height:1;margin-bottom:18px;}
   .step h3{font-family:var(--serif);font-size:23px;color:var(--ink);font-weight:500;margin-bottom:14px;}
-  .step p{font-size:13px;}
+  .step p{font-size:13px;text-align:justify;}
 
   /* ---------- education ---------- */
   .education{padding:var(--sec) 0;background:var(--cream);text-align:center;}
@@ -265,7 +265,7 @@
   .voices .wrap{position:relative;}
   .voices .eyebrow{display:block;margin-bottom:18px;text-align:center;}
   .voices h2{font-size:44px;text-align:center;}
-  .voices-note{font-family:var(--serif);font-style:italic;font-size:16px;color:var(--eyebrow);text-align:center;margin:16px 0 52px;letter-spacing:.01em;}
+  .voices-note{font-family:var(--serif);font-weight:700;font-size:16px;color:var(--eyebrow);text-align:justify;margin:16px 0 52px;letter-spacing:.01em;}
   .voices-track{display:flex;gap:28px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:48px;-webkit-overflow-scrolling:touch;padding:6px 48px 26px;margin:0 -48px;scrollbar-width:none;cursor:grab;}
   .voices-track::-webkit-scrollbar{display:none;}
   .voices-track.dragging{cursor:grabbing;scroll-snap-type:none;}
@@ -286,7 +286,7 @@
   .faq-list{max-width:830px;margin:0 auto;}
   .faq-item{border-bottom:1px solid var(--line);}
   .faq-item:first-child{border-top:1px solid var(--line);}
-  .faq-q{width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:28px;padding:26px 4px;text-align:left;font-family:var(--serif);font-size:23px;color:var(--ink);font-weight:500;line-height:1.32;transition:color .25s;}
+  .faq-q{width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:28px;padding:26px 4px;text-align:justify;font-family:var(--serif);font-size:23px;color:var(--ink);font-weight:500;line-height:1.32;transition:color .25s;}
   .faq-q:hover{color:var(--brown);}
   .faq-icon{flex-shrink:0;width:20px;height:20px;position:relative;margin-top:8px;transition:transform .4s ease;}
   .faq-icon::before,.faq-icon::after{content:"";position:absolute;background:var(--brown);}
@@ -295,7 +295,7 @@
   .faq-item.open .faq-icon{transform:rotate(90deg);}
   .faq-item.open .faq-icon::after{opacity:0;}
   .faq-a{overflow:hidden;max-height:0;transition:max-height .45s ease;}
-  .faq-a p{padding:0 4px 28px;font-size:15px;max-width:720px;}
+  .faq-a p{padding:0 4px 28px;font-size:15px;max-width:720px;text-align:justify;}
 
   @media(max-width:760px){
     .voices h2,.faq h2{font-size:33px;}
@@ -314,10 +314,10 @@
   .cta-inner{position:relative;z-index:2;max-width:1240px;margin:0 auto;padding:var(--sec) 48px;}
   .cta-box{max-width:470px;}
   .cta-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:470px;}
-  .cta-alt{margin-top:18px;font-size:13px;line-height:1.5;color:#826E56;max-width:400px;}
+  .cta-alt{margin-top:18px;font-size:13px;line-height:1.5;color:#826E56;max-width:400px;text-align:justify;}
   .cta .eyebrow{display:block;margin-bottom:24px;color:#826E56;}
   .cta h2{font-size:46px;color:#342C23;margin-bottom:26px;}
-  .cta p{font-size:14px;color:#605342;margin-bottom:40px;max-width:380px;}
+  .cta p{font-size:14px;color:#605342;margin-bottom:40px;max-width:380px;text-align:justify;}
   .cta-actions .btn{padding:17px 18px;font-size:11px;letter-spacing:.13em;gap:9px;border-radius:3px;justify-content:center;white-space:nowrap;}
   .cta-actions .btn svg{flex-shrink:0;}
   .cta-tg{background:var(--brown);color:#fff;box-shadow:0 12px 28px rgba(123,95,71,.32);}
@@ -330,9 +330,9 @@
   .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1.1fr 1fr;gap:40px;margin-bottom:64px;}
   .foot-col h4{font-family:var(--sans);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--eyebrow);font-weight:600;margin-bottom:24px;}
   .foot-col ul{list-style:none;display:flex;flex-direction:column;gap:13px;}
-  .foot-col a, .foot-col li{font-size:13.5px;color:var(--body);transition:.25s;}
+  .foot-col a, .foot-col li{font-size:13.5px;color:var(--body);transition:.25s;text-align:justify;}
   .foot-col a:hover{color:var(--brown);}
-  .foot-bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid var(--line);padding-top:30px;font-size:12px;color:var(--body);flex-wrap:wrap;}
+  .foot-bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid var(--line);padding-top:30px;font-size:12px;color:var(--body);flex-wrap:wrap;text-align:justify;}
 
   /* ---------- reveal ---------- */
   .reveal{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease;}
@@ -344,7 +344,7 @@
   .modal{background:var(--cream);max-width:460px;width:100%;padding:54px 48px;text-align:center;transform:translateY(20px);transition:.4s;position:relative;}
   .modal-back.open .modal{transform:none;}
   .modal h3{font-size:34px;margin-bottom:14px;}
-  .modal p{font-size:14px;margin-bottom:28px;}
+  .modal p{font-size:14px;margin-bottom:28px;text-align:justify;}
   .modal .close{position:absolute;top:18px;right:20px;background:none;border:none;font-size:24px;color:var(--body);cursor:pointer;line-height:1;}
   .modal form{display:flex;flex-direction:column;gap:14px;text-align:left;}
   .modal input{font-family:var(--sans);font-size:14px;padding:14px 16px;border:1px solid var(--line);background:#fff;color:var(--ink);}
@@ -473,7 +473,7 @@
   <div class="wrap hero-grid">
     <div class="hero-text">
       <span class="eyebrow" data-i18n="hero.eyebrow">Психотерапия онлайн — бережно и глубоко</span>
-      <h1 data-i18n-html="hero.h1">Нести всё на себе — <em>не единственный</em> путь</h1>
+      <h1 data-i18n-html="hero.h1">Нести всё на себе — <strong>не единственный</strong> путь</h1>
       <p data-i18n="hero.p">Знакомая тревога, которая не уходит. Одни и те же сценарии в отношениях. Внутренняя тяжесть, которой нет объяснения. С этим приходят ко мне — и шаг за шагом мы добираемся до того, что прячется за словами.</p>
       <div class="hero-actions">
         <a class="btn btn-solid" href="https://telegram.me/Paykina_your_psy" target="_blank" rel="noopener" data-i18n="hero.cta">Сделать первый шаг</a>
@@ -744,7 +744,7 @@ const i18n = {
     "cta.book": "Записаться",
     // hero
     "hero.eyebrow": "Психотерапия онлайн — бережно и глубоко",
-    "hero.h1": "Нести всё на себе — <em>не единственный</em> путь",
+    "hero.h1": "Нести всё на себе — <strong>не единственный</strong> путь",
     "hero.p": "Знакомая тревога, которая не уходит. Одни и те же сценарии в отношениях. Внутренняя тяжесть, которой нет объяснения. С этим приходят ко мне — и шаг за шагом мы добираемся до того, что прячется за словами.",
     "hero.cta": "Сделать первый шаг",
     "hero.howItWorks.btn": "Как это работает",
@@ -877,7 +877,7 @@ const i18n = {
     "cta.book": "Записатися",
     // hero
     "hero.eyebrow": "Психотерапія онлайн — дбайливо та глибоко",
-    "hero.h1": "Нести все на собі — <em>не єдиний</em> шлях",
+    "hero.h1": "Нести все на собі — <strong>не єдиний</strong> шлях",
     "hero.p": "Знайома тривога, яка не минає. Одні й ті самі сценарії у стосунках. Внутрішня важкість, якій немає пояснення. З цим приходять до мене — і крок за кроком ми добираємося до того, що ховається за словами.",
     "hero.cta": "Зробити перший крок",
     "hero.howItWorks.btn": "Як це працює",

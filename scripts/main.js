@@ -161,14 +161,24 @@
   });
 
   /* ---- DIPLOMA MODAL ---- */
+  let diplomaCards = [];
+  let currentDiplomaIndex = -1;
+  
+  function collectDiplomaCards(){
+    diplomaCards = Array.from(document.querySelectorAll('.diploma-card img')).map(img => img.src);
+  }
+  collectDiplomaCards();
+  
   function openDiploma(imgSrc){
     const overlay = document.getElementById('diplomaOverlay');
     const img = document.getElementById('diplomaImg');
     if(!overlay || !img) return;
     img.src = imgSrc;
     img.alt = dict['education.diploma'] || 'Диплом';
+    currentDiplomaIndex = diplomaCards.indexOf(imgSrc);
     overlay.classList.add('open');
     document.body.classList.add('modal-open');
+    updateDiplomaNavButtons();
   }
   function closeDiploma(){
     const overlay = document.getElementById('diplomaOverlay');
@@ -176,6 +186,24 @@
     overlay.classList.remove('open');
     document.body.classList.remove('modal-open');
   }
+  function navigateDiploma(delta){
+    if(diplomaCards.length === 0 || currentDiplomaIndex < 0) return;
+    const newIndex = currentDiplomaIndex + delta;
+    if(newIndex < 0 || newIndex >= diplomaCards.length) return;
+    const img = document.getElementById('diplomaImg');
+    if(img){
+      img.src = diplomaCards[newIndex];
+      currentDiplomaIndex = newIndex;
+      updateDiplomaNavButtons();
+    }
+  }
+  function updateDiplomaNavButtons(){
+    const prevBtn = document.getElementById('diplomaPrev');
+    const nextBtn = document.getElementById('diplomaNext');
+    if(prevBtn) prevBtn.style.visibility = currentDiplomaIndex <= 0 ? 'hidden' : 'visible';
+    if(nextBtn) nextBtn.style.visibility = currentDiplomaIndex >= diplomaCards.length - 1 ? 'hidden' : 'visible';
+  }
+  
   document.querySelectorAll('.diploma-card').forEach(card=>{
     card.addEventListener('click',()=>{
       const img = card.querySelector('img');
@@ -190,8 +218,17 @@
     const closeBtn = diplomaOverlay.querySelector('.diploma-modal-close');
     if(closeBtn) closeBtn.addEventListener('click', closeDiploma);
   }
+  const diplomaPrev = document.getElementById('diplomaPrev');
+  const diplomaNext = document.getElementById('diplomaNext');
+  if(diplomaPrev) diplomaPrev.addEventListener('click', (e)=>{ e.stopPropagation(); navigateDiploma(-1); });
+  if(diplomaNext) diplomaNext.addEventListener('click', (e)=>{ e.stopPropagation(); navigateDiploma(1); });
+  
   document.addEventListener('keydown',(e)=>{
     if(e.key === 'Escape') closeDiploma();
+    if(document.getElementById('diplomaOverlay')?.classList.contains('open')){
+      if(e.key === 'ArrowLeft') navigateDiploma(-1);
+      if(e.key === 'ArrowRight') navigateDiploma(1);
+    }
   });
 
   /* ---- SLIDER ---- */

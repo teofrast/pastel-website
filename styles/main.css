@@ -228,6 +228,10 @@ nav .lang-switcher{display:none;}
 .diploma-modal-inner img{width:100%;height:auto;max-height:88dvh;object-fit:contain;box-shadow:0 20px 60px rgba(0,0,0,.4);}
 .diploma-modal-close{position:absolute;top:-38px;right:0;background:none;border:none;font-size:38px;color:#fff;cursor:pointer;line-height:1;opacity:.85;transition:.3s;z-index:2;}
 .diploma-modal-close:hover{opacity:1;}
+.diploma-modal-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.15);backdrop-filter:blur(4px);border:none;color:#fff;font-size:28px;cursor:pointer;padding:14px 16px;border-radius:4px;transition:.3s;z-index:2;line-height:1;user-select:none;}
+.diploma-modal-nav:hover{background:rgba(255,255,255,.3);}
+.diploma-modal-prev{left:12px;}
+.diploma-modal-next{right:12px;}
 
 /* ---------- faq ---------- */
 .faq{padding:var(--sec) 0;background:var(--section);}

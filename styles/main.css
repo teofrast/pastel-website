@@ -297,20 +297,6 @@ nav .lang-switcher{display:none;}
 .pricing-note{font-size:12px;color:var(--body);margin-bottom:32px;}
 .pricing-cta{margin:0 auto;}
 
-/* ---------- cta-end ---------- */
-.cta-end{position:relative;overflow:hidden;background:var(--section);}
-.cta-end .container{position:relative;z-index:2;padding:var(--sec) 48px;}
-.cta-end .eyebrow{display:block;margin-bottom:24px;color:var(--primary);}
-.cta-end h2{font-size:46px;color:var(--ink);margin-bottom:26px;}
-.cta-end-p{font-size:14px;color:var(--body);margin-bottom:40px;max-width:380px;text-align:justify;}
-.cta-end-btns{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:470px;}
-.cta-end-btns .btn{padding:17px 18px;font-size:11px;letter-spacing:.13em;gap:9px;border-radius:3px;justify-content:center;white-space:nowrap;}
-.cta-pic{
-  position:absolute;inset:0;z-index:1;
-}
-.cta-pic img{width:100%;height:100%;object-fit:cover;object-position:right center;}
-.cta-pic picture{display:block;width:100%;height:100%;}
-.cta-pic::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg, rgba(242,234,224,.96) 0%, rgba(220,236,233,.78) 34%, rgba(195,222,221,.22) 56%, rgba(195,222,221,0) 72%);}
 
 /* ---------- footer ---------- */
 .footer{background:var(--cream-soft);padding:80px 0 38px;border-top:1px solid var(--line);}
@@ -353,7 +339,6 @@ nav .lang-switcher{display:none;}
   .method{padding:var(--sec) 0;}
   .quote-section{padding:var(--sec) 0;}
   .quote-section blockquote p{font-size:27px;}
-  .cta-pic::after{background:linear-gradient(90deg, rgba(242,234,224,.97) 0%, rgba(220,236,233,.82) 60%, rgba(195,222,221,.4) 100%);}
   .footer-grid{grid-template-columns:1fr 1fr;}
   .footer-bottom{flex-direction:column;align-items:flex-start;gap:16px;}
 }
@@ -380,7 +365,4 @@ nav .lang-switcher{display:none;}
   .hero-actions .btn{justify-content:center;}
   .footer-grid{grid-template-columns:1fr;}
   .diploma-modal-close{top:8px;right:10px;text-shadow:0 1px 6px rgba(0,0,0,.6);}
-}
-@media(max-width:480px){
-  .cta-end-btns{grid-template-columns:1fr;max-width:340px;gap:12px;}
 }

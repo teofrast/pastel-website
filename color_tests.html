@@ -77,29 +77,21 @@
   --eyebrow: #B89E82;
   --line: #EDE0D6;
 }
-/* === Нежный голубой === */
-[data-palette="soft-blue"] {
-  --brown: #7B9CB5;
-  --brown-dark: #6A8BA4;
-  --taupe: #BCC8D4;
-  --eyebrow: #8BA3B8;
-  --line: #D6DEE4;
+/* === Бассейн (базовый #B6D8F7) === */
+[data-palette="pool"] {
+  --brown: #B6D8F7;
+  --brown-dark: #9DBFDE;
+  --taupe: #D4E6F9;
+  --eyebrow: #A8CDEE;
+  --line: #E8F1FB;
 }
-/* === Сланцевый === */
-[data-palette="slate"] {
-  --brown: #6B8FA3;
-  --brown-dark: #5A7E92;
-  --taupe: #A8BBC7;
-  --eyebrow: #7D97A8;
-  --line: #CCD5DC;
-}
-/* === Небесный === */
-[data-palette="sky"] {
-  --brown: #5B9EBD;
-  --brown-dark: #4A8DAC;
-  --taupe: #9DC4D6;
-  --eyebrow: #6DA4BB;
-  --line: #C5DCE6;
+/* === Город (базовый #9BABBE) === */
+[data-palette="city"] {
+  --brown: #9BABBE;
+  --brown-dark: #8292A5;
+  --taupe: #C0CAD7;
+  --eyebrow: #AEBBC9;
+  --line: #DDE2EA;
 }
 
 /* фиксированные цвета внутри секций, привязанные к палитре */
@@ -109,23 +101,17 @@
 [data-palette="warm"]  .method p { color:#645B4F; }
 [data-palette="warm"]  .cta-pic::after { background:linear-gradient(90deg, rgba(191,172,153,.96) 0%, rgba(195,176,157,.78) 34%, rgba(201,184,165,.22) 56%, rgba(201,184,165,0) 72%); }
 
-[data-palette="soft-blue"] .cta-end .eyebrow { color:#6A7D8E; }
-[data-palette="soft-blue"] .cta-end h2 { color:#283540; }
-[data-palette="soft-blue"] .cta-end-p { color:#4A5D6E; }
-[data-palette="soft-blue"] .method p { color:#5A6D7E; }
-[data-palette="soft-blue"] .cta-pic::after { background:linear-gradient(90deg, rgba(156,175,190,.96) 0%, rgba(160,179,193,.78) 34%, rgba(167,185,197,.22) 56%, rgba(167,185,197,0) 72%); }
+[data-palette="pool"] .cta-end .eyebrow { color:#7A8FA5; }
+[data-palette="pool"] .cta-end h2 { color:#2A3542; }
+[data-palette="pool"] .cta-end-p { color:#4A5A6E; }
+[data-palette="pool"] .method p { color:#4A5A6E; }
+[data-palette="pool"] .cta-pic::after { background:linear-gradient(90deg, rgba(180,200,216,.96) 0%, rgba(186,205,220,.78) 34%, rgba(194,212,226,.22) 56%, rgba(194,212,226,0) 72%); }
 
-[data-palette="slate"] .cta-end .eyebrow { color:#5C707E; }
-[data-palette="slate"] .cta-end h2 { color:#222E38; }
-[data-palette="slate"] .cta-end-p { color:#425260; }
-[data-palette="slate"] .method p { color:#4D5D6B; }
-[data-palette="slate"] .cta-pic::after { background:linear-gradient(90deg, rgba(142,164,178,.96) 0%, rgba(148,168,182,.78) 34%, rgba(155,175,187,.22) 56%, rgba(155,175,187,0) 72%); }
-
-[data-palette="sky"] .cta-end .eyebrow { color:#4C7A91; }
-[data-palette="sky"] .cta-end h2 { color:#1C3642; }
-[data-palette="sky"] .cta-end-p { color:#3A687E; }
-[data-palette="sky"] .method p { color:#4A788E; }
-[data-palette="sky"] .cta-pic::after { background:linear-gradient(90deg, rgba(133,178,196,.96) 0%, rgba(140,184,201,.78) 34%, rgba(150,192,207,.22) 56%, rgba(150,192,207,0) 72%); }
+[data-palette="city"] .cta-end .eyebrow { color:#6A788A; }
+[data-palette="city"] .cta-end h2 { color:#252D38; }
+[data-palette="city"] .cta-end-p { color:#424E60; }
+[data-palette="city"] .method p { color:#4A5668; }
+[data-palette="city"] .cta-pic::after { background:linear-gradient(90deg, rgba(170,180,193,.96) 0%, rgba(176,185,197,.78) 34%, rgba(184,192,204,.22) 56%, rgba(184,192,204,0) 72%); }
 
 /* панель переключателей */
 .palette-bar {
@@ -155,9 +141,8 @@ body { padding-top:46px; } /* отступ под панель */
 <div class="palette-bar" id="paletteBar">
   <span>🎨 Палитра:</span>
   <button data-palette="warm" class="active">Тёплый</button>
-  <button data-palette="soft-blue">Нежный голубой</button>
-  <button data-palette="slate">Сланцевый</button>
-  <button data-palette="sky">Небесный</button>
+  <button data-palette="pool">Бассейн</button>
+  <button data-palette="city">Город</button>
 </div>
 
 <!-- Header -->

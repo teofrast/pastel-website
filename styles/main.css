@@ -267,6 +267,20 @@ nav .lang-switcher{display:none;}
 .reasons-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px;max-width:860px;margin:0 auto;text-align:left;list-style:none;}
 .reasons-grid li{font-size:14px;line-height:1.55;color:var(--ink);padding:14px 0;border-bottom:1px solid var(--line);}
 
+/* ---------- pricing ---------- */
+.pricing{padding:var(--sec) 0;background:var(--cream);text-align:center;}
+.pricing .eyebrow{display:block;margin-bottom:18px;}
+.pricing h2{margin-bottom:52px;}
+.pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;max-width:760px;margin:0 auto 32px;text-align:left;border:1px solid var(--line);}
+.pricing-item{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);}
+.pricing-item:nth-child(even){border-right:none;}
+.pricing-item:nth-last-child(-n+2){border-bottom:none;}
+.pricing-name{font-size:15px;color:var(--ink);}
+.pricing-price{font-family:var(--serif);font-size:22px;font-weight:600;color:#342C23;white-space:nowrap;}
+.pricing-price::after{content:"₴";margin-left:4px;font-size:16px;font-weight:500;color:#826E56;}
+.pricing-note{font-size:12px;color:var(--body);margin-bottom:32px;}
+.pricing-cta{margin:0 auto;}
+
 /* ---------- cta-end ---------- */
 .cta-end{position:relative;overflow:hidden;background:var(--section);}
 .cta-end .container{position:relative;z-index:2;padding:var(--sec) 48px;}
@@ -318,7 +332,7 @@ nav .lang-switcher{display:none;}
   .about-grid{grid-template-columns:1fr;}
   .about-pic img{min-height:420px;}
   .about-content{padding:var(--sec) 28px;}
-  .services h2,.process h2,.method h2,.education h2,.reasons h2,.voices h2,.faq h2{margin-bottom:40px;}
+.services h2,.process h2,.method h2,.education h2,.reasons h2,.voices h2,.faq h2,.pricing h2{margin-bottom:40px;}
   .cards.three,.steps.four{grid-template-columns:1fr;gap:40px;}
   .method{padding:var(--sec) 0;}
   .quote-section{padding:var(--sec) 0;}
@@ -337,7 +351,7 @@ nav .lang-switcher{display:none;}
   .voices-controls span{min-width:auto;}
   .faq h2{margin-bottom:38px;}
   .faq-q{font-size:20px;padding:22px 2px;gap:20px;}
-  .reasons h2{font-size:33px;margin-bottom:36px;}
+.reasons h2,.pricing h2{font-size:33px;margin-bottom:36px;}
   .reasons-grid{grid-template-columns:1fr;gap:4px;}
 }
 @media(max-width:560px){
